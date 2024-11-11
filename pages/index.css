@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: inherit;
+    background-color: #E5E5E5;
+    
+}
+/* styling header region */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #14213D;
+    color: #ffffff;
+    padding: 1rem;
+}
+.logIn{
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    height: fit-content;
+    border-radius: 4px;
+    transition: all 1s;
+}
+.logIn:hover{
+    background-color: #FCA311;
+}
+.header a{
+    text-decoration: none;
+    padding-left: 3rem;
+    color: #ffffff;
+}
+/* completing header region */
+/* home page region */
+#home{
+    padding: 2rem;
+}
+/* background image and text styling */
+.homePage{
+    background-image: url(../assests/images/Screenshot_2024-11-04_230304.png);
+    background-color:  rgba(0, 0, 0, 0.418);
+    height: 35rem;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.5rem; 
+    position: relative;  
+}
+.layer {
+    background-color: rgba(4, 9, 69, 0.557);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.h1Modify{
+    padding-top: 10rem;
+    padding-left: 2rem ;
+}
+span{
+    color: #FCA311;
+}
+.shopNow{
+    color: black;
+    background-color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    transition: all 1s;
+}
+.shopNow a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+.shopNow:hover{
+    background-color: #FCA311;
+}
+/* search bar styling */
+.searchBar{
+    position: relative;
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+}
+.searchBar i{
+    position:absolute ;
+    font-size: 1.3rem;
+    top: 50%; 
+    left: 20px;
+    color: #4f4f4f;
+    transform: translateY(-50%);
+    padding-right: 5px;
+    border-right: 1px solid #4f4f4f;
+}
+.searchBar input{
+    padding-left: 2.2rem;
+    width:45rem ;
+    height: 2rem;
+    font-size: 1rem;
+}
+.searchBar button{
+    height:2rem;
+    width: 8rem;
+    background-color: #14213D;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+/* Products elements */
+#products{
+    padding: 2rem;
+    width: fit-content;
+}
+#product-item{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+#product-item{
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 30rem;
+}
+.products img{
+    height: 20rem;
+    width: 28rem;
+    border-radius: 8px;
+}
+/* All product styling */
+.h2{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+/* completing home region */
+/* styling footer region */
+footer{
+    background-color: #14213D;
+    color: #ffffff;
+}
+.footer{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2rem;
+}
+.footer h2{
+    color: #FCA311;
+}
+.footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    padding:1.4rem;
+    gap: 1rem;
+}
+.footer1 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.email{
+    position: relative;
+}
+.email i{
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%; 
+    left: 3px;
+    color: #4f4f4f;
+    border-right: 1px solid #4f4f4f;
+    padding-right: 5px;
+}
+.email input{
+    padding-left: 1.5rem;
+    border:2px solid #FCA311;
+    border-radius: 4px;
+    width: 15rem;
+    height: 2rem;
+}
+.button{
+    padding: 0.3rem 2rem;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 4px;
+    font-size:medium;
+    font-weight: 600;
+    transition: all 1s;
+}
+.button:hover{
+    border: #FCA311 ;
+    background-color: #FCA311;
+    color: black;
+}

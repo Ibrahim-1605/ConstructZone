@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./signup.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div><img src="../assests/images/Building-images.webp" alt="Sign up reference imaage light house image"/></div>
+        <div class="container-item">
+            <div class="signUp-div">
+            <form action="">
+                <div><h1>Sign up</h1></div>
+                <div class="nameElement">
+                    <div>
+                     <div><label for="first_name">First Name</label></div>
+                     <div><input type="text" id="first_name" placeholder="Enter your first name" name="user_first_name" required/></div>
+                     <div class="error" id="firstNameError"></div>
+                    </div>
+                    <div>
+                     <div><label for="last_name">Last Name</label></div>
+                     <div><input type="text" id="last_name" placeholder="Enter your last name" name="user_last_name"/></div>
+                    </div>
+                 </div>
+                 <div>
+                     <div><label for="email">Email</label></div>
+                     <div><input type="email" id="email" placeholder="Enter your Email" name="user_email" required/></div>
+                     <div class="error" id="emailError"></div>
+                 </div>
+                 <div class="eye-icon">
+                     <div><label for="password">Password</label></div>
+                     <div><input type="password" id="password" placeholder="Enter your Password" name="user_password" required/><i class="right-icon  fa-solid fa-eye-slash"></i></div>
+                     <div class="error" id="passwordError"></div>
+                 </div>
+                 <div>
+                     <button id="submit" type="submit">Create an Account</button>
+                 </div>
+            </div>
+            </form>    
+            </div>
+    </div>
+</body>
+<script type="module" src="./signup.js" defer></script>
+</html>
