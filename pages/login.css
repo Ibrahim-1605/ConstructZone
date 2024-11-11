@@ -29,6 +29,7 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 10px;
+    box-shadow:  7px 3px 3px rgb(41, 41, 41);
 }
 
 input {
@@ -50,7 +51,6 @@ label {
     font-weight: bold;
     font-size: 1.2rem;
 }
-
 h1 {
     padding-bottom: 2rem;
     font-size: 2.5rem;
@@ -69,13 +69,11 @@ button {
     font-size: 1.2rem;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
-
 button:hover {
     background-color: #FCA311;
     border-color: #FCA311;
     color: #000000;
 }
-
 div p {
     text-align: center;
     padding-top: 1rem;

@@ -1,9 +1,9 @@
 // Naming the elements
-let productsItem = document.getElementById("product-item");
+let productsItem = document.getElementById("products");
 
 //merging the JSON
 
-fetch("../data/product.json")
+fetch("../data/products.json")
 .then(res => res.json())
 .then((data) => {
     for(let product of data){
@@ -12,7 +12,7 @@ fetch("../data/product.json")
     productDiv.innerHTML=`<img src="${product.product_image}"/>
     <h3>${product.product_name}</h3>
     <p>Description: ${product.product_description}</p>
-    <p>Rating: ${product.rating}</p>`;
+    <p class="rating">Rating: <span class="ratingNumber">${product.rating}</span></p>`;
     productsItem.appendChild(productDiv);
     }
 });

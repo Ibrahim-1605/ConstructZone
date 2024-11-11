@@ -78,6 +78,7 @@ div p{
 }
 .signUp-div{
     line-height:3rem;
+    box-shadow:  7px 3px 3px rgb(41, 41, 41);
     border-radius: 10px;
     background-color: #ffffff;
     padding: 2rem;

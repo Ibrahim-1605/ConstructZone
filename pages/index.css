@@ -85,55 +85,41 @@ span{
 .shopNow:hover{
     background-color: #FCA311;
 }
-/* search bar styling */
-.searchBar{
-    position: relative;
-    padding: 1rem;
-    width: fit-content;
-    margin: auto;
-}
-.searchBar i{
-    position:absolute ;
-    font-size: 1.3rem;
-    top: 50%; 
-    left: 20px;
-    color: #4f4f4f;
-    transform: translateY(-50%);
-    padding-right: 5px;
-    border-right: 1px solid #4f4f4f;
-}
-.searchBar input{
-    padding-left: 2.2rem;
-    width:45rem ;
-    height: 2rem;
-    font-size: 1rem;
-}
-.searchBar button{
-    height:2rem;
-    width: 8rem;
-    background-color: #14213D;
-    color: #ffffff;
-    font-size: 1rem;
-    border-radius: 4px;
-}
 /* Products elements */
 #products{
-    padding: 2rem;
+    padding: 2rem 0rem;
     width: fit-content;
 }
-#product-item{
+#products{
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
 }
-#product-item{
+.product-item{
+    box-shadow: 5px 3px 3px rgb(41, 41, 41);
+    border-radius: 5px;
     background-color: #ffffff;
     padding: 1rem;
-    width: 30rem;
+    width: 28rem;
+}
+.rating{
+    color: #14213D;
+    line-height: 2rem;
+}
+.ratingNumber{
+    background-color: green;
+    color: #ffffff;
+    padding: 0px 6px;
+    border-radius: 3px;
+}
+.product-item p{
+    width: 23rem;
 }
 .products img{
     height: 20rem;
-    width: 28rem;
+    width: 26rem;
     border-radius: 8px;
 }
 /* All product styling */
@@ -141,7 +127,7 @@ span{
     font-size: 1.5rem;
     padding-left: 3rem;
     padding-bottom: 2rem;
-}
+}   
 /* completing home region */
 /* styling footer region */
 footer{
@@ -151,6 +137,7 @@ footer{
 .footer{
     padding: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     line-height: 2rem;
 }
@@ -199,7 +186,11 @@ footer{
     font-weight: 600;
     transition: all 1s;
 }
+.button a{
+    color: black;
+}
 .button:hover{
+    padding: 0.3rem 2rem;
     border: #FCA311 ;
     background-color: #FCA311;
     color: black;
