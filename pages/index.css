@@ -107,7 +107,7 @@ span{
     transition: all 1s;
 }
 .product-item:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .rating{
     color: #14213D;
@@ -126,6 +126,9 @@ span{
     height: 20rem;
     width: 26rem;
     border-radius: 8px;
+}
+.h1{
+    font-size: 2rem;
 }
 /* All product styling */
 .h2{
