@@ -10,16 +10,29 @@
 <body>
     <header class="header">
         <h1 class="h1">Construct<span>Zone</span></h1>
-        <a href="./login.html"><div class="logIn">Log in</div></a>
+        <nav>
+            <a href="#home">Products</a>
+            <a href="">New Collection</a>
+        </nav>
+        <div class="aboutCartFav">
+            <div><a href="./addToCart.html"><i class="fa-solid fa-cart-plus"></i></a></div>
+            <div><a href="./favourite.html"><i class="fa-regular fa-heart"></i></a></div>
+            <div class="userInformation" id="userInformation">
+                <div><i class="fa-solid fa-circle-user"></i></div>
+                <div id="userName"></div>
+                <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+        </div>
     </header>
     <main>
         <div class="homePage">
             <div class="layer">
                 <div class="h1Modify">
+                    <h1 class="h1">Trusted tools for <span>Trusted builders...</span></h1>
                     <h1>Constructing your dreams,</h1>
                     <h1><span>delivering our promises</span></h1>
                 </div>
-                <div class="shopNow"><a href="./login.html">Shop now!</a></div>
+                <div class="exploreMore"><a href="#home">Explore more!</a></div>
             </div>
         </div>
         <section id="home">
@@ -28,21 +41,16 @@
                 <input type="text" id="search" placeholder="Search Products or brands"/>
                 <button>Search</button>
             </div>
-            <div class="allProducts">
+            <div>
                 <h2 class="h2"><p>All Products</p></h2>
-                <div class="lastPost">
-                    <div>Sort by last Post</div>
-                    <div class="dropdown"><i class="fa-solid fa-caret-down"></i></div>
-                </div>
             </div>
-            <div class="products">
-                <div class="product-item"></div>
+            <div id="products" class="products">
             </div>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <div><h1 class="h1">Construct<span>Zone</span></h1></div>
+            <div><h1>Construct<span>Zone</span></h1></div>
             <div>
                 <h2>Product</h2>
                 <div><a href="">Features</a></div>
@@ -57,22 +65,21 @@
                 <h2>Share feedback for progress</h2>
                 <h5>Gathering Advice for the Improvement</h5>
                 <div>
-                    <div>
+                    <div class="email">
                         <i class="fa-regular fa-envelope"></i>
                         <input type="text" id="feedback" placeholder="Input your email"/>
-                        <button>Send</button>
+                        <a href=""><button type="submit" class="button">Send</button></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer1">
-            <div>&copy; 2024 Brand.<a href="">Inc</a>
-                <ul>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Terms</a></li>
-                </ul>
-            </div>
+            <div>&copy; 2024 Brand.<a href="">Inc</a></div>
+            <div><li><a href="">Privacy</a></li></div>
+            <div><li><a href="">Terms</a></li></div>
         </div>
     </footer>
 </body>
+<script src="./pages/index.js" defer></script>
+<script type="module" src="./adminJS/fireBase.js"></script>
 </html>

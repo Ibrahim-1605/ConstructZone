@@ -70,7 +70,7 @@ span{
     background-color: #ffffff;
     width: fit-content;
     height: fit-content;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1rem;
     margin-left: 3rem;
     margin-top: 2rem;
@@ -84,6 +84,7 @@ span{
 }
 .shopNow:hover{
     background-color: #FCA311;
+    padding: 0.5rem 2rem;
 }
 /* Products elements */
 #products{
@@ -103,6 +104,10 @@ span{
     background-color: #ffffff;
     padding: 1rem;
     width: 28rem;
+    transition: all 1s;
+}
+.product-item:hover{
+    transform: scale(1.1);
 }
 .rating{
     color: #14213D;
@@ -157,6 +162,9 @@ footer{
 .footer1 a{
     color: #ffffff;
     text-decoration: none;
+}
+.footer a:hover{
+    color: #FCA311;
 }
 .email{
     position: relative;

@@ -32,8 +32,10 @@ createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert("Account created");
-    window.location.href = "./home.html";
+    if(findValidPassword(password)==true){
+      alert("Account created");
+      window.location.href = "./home.html";
+    }
     // ...
   })
   .catch((error) => {
