@@ -20,12 +20,12 @@ const app = initializeApp(firebaseConfig);
 //getting Elements: inputs
 let firstName = document.getElementById("first_name").value;
 let lastName = document.getElementById("last_name").value;
-let signUpBtn = document.getElementById("submit");
-signUpBtn.addEventListener("click" , function(e){
+let signUpform = document.getElementById("signup-form");
+signUpform.addEventListener("submit" , function(e){
   e.preventDefault();
-  
   let email=document.getElementById("email").value;
   let password=document.getElementById("password").value;
+  let firstName = document.getElementById("first_name").value;
 
 const auth = getAuth();
 createUserWithEmailAndPassword(auth, email, password)
@@ -37,6 +37,7 @@ createUserWithEmailAndPassword(auth, email, password)
       window.location.href = "./home.html";
     }
     // ...
+    console.log("account created successfully")
   })
   .catch((error) => {
     const errorCode = error.code;

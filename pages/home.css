@@ -38,6 +38,13 @@ body{
 .header .aboutCartFav a{
     padding-left: 0px;
 }
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 3.7rem;
+    width: 3.7rem;
+}
 /* completing header region */
 /* home page region */
 #home{

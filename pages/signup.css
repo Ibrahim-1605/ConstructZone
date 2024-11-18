@@ -7,14 +7,15 @@
     display: flex;
     gap: 3rem;
 }
-img{
-    height: 100vh;
-    width: 90%;
-}
 body{
-    height: 100vh;
+    height: 100dvh;
     font: inherit;
+    overflow-y: hidden;
     background-color: #E5E5E5;
+}
+img{
+    height: 100dvh;
+    width: 90%;
 }
 .eye-icon{
     position: relative;
