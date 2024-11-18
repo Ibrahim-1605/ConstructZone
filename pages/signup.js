@@ -1,96 +1,86 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAxwTaDl4OakGDqYk8faRbHW1czCAtl7ME",
   authDomain: "e-commerce-cd8a5.firebaseapp.com",
   projectId: "e-commerce-cd8a5",
-  storageBucket: "e-commerce-cd8a5.appspot.com",
+  storageBucket: "e-commerce-cd8a5.firebasestorage.app",
   messagingSenderId: "507959584187",
   appId: "1:507959584187:web:ba1d6e514d2f9a5238509e"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-//getting Elements: inputs
-let firstName = document.getElementById("first_name").value;
-let lastName = document.getElementById("last_name").value;
-let signUpform = document.getElementById("signup-form");
-signUpform.addEventListener("submit" , function(e){
-  e.preventDefault();
-  let email=document.getElementById("email").value;
-  let password=document.getElementById("password").value;
-  let firstName = document.getElementById("first_name").value;
-
 const auth = getAuth();
-createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    if(findValidPassword(password)==true){
-      alert("Account created");
-      window.location.href = "./home.html";
-    }
-    // ...
-    console.log("account created successfully")
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorCode)
-  });
-});
 
-//getting element:inputs
-let logInBtn= document.getElementById("submit");
+// Getting elements: inputs and error display areas
 let emailError = document.getElementById("emailError");
 let passwordError = document.getElementById("passwordError");
 let firstNameError = document.getElementById("firstNameError");
 
-logInBtn.addEventListener("click", function(event){
-  event.preventDefault();
+// Handle form submission
+let signUpForm = document.getElementById("signup-form");
 
-  let email=document.getElementById("email").value;
-  let password=document.getElementById("password").value;
+signUpForm.addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent the default form submission
+
+  // Get the values inside the submit event listener to ensure you're getting the latest values
   let firstName = document.getElementById("first_name").value;
+  let lastName = document.getElementById("last_name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
 
+  // Clear previous error messages
   emailError.textContent = "";
   passwordError.textContent = "";
-  firstNameError.textContent ="";
+  firstNameError.textContent = "";
 
-  //code for the first name
+  // Validate first name
   if (firstName.trim() === "") {
-    firstNameError.textContent = "Please enter your name.";
+    firstNameError.textContent = "Please enter your first name.";
   } else if (firstName.length < 3 || firstName.length > 20) {
-    firstNameError.textContent = "Name must be between 3 and 20 characters.";
+    firstNameError.textContent = "First name must be between 3 and 20 characters.";
   }
-  
-  //code for email validation
-  if(findValidEmail(email)==false){
+
+  // Validate email
+  if (!findValidEmail(email)) {
     emailError.textContent = "Please enter a valid email address.";
   }
-  if(findValidEmail(email)==true){
-    emailError.textContent = "";
+
+  // Validate password
+  if (!findValidPassword(password)) {
+    passwordError.textContent = `Password is invalid. It must be at least 8 characters long, contain an uppercase letter, a lowercase letter, a number, and a special character.`;
   }
-  //code for password validation
-  if(findValidPassword(password)==false){
-    passwordError.textContent = `Password is invalid. It must be at least 8 characters long, contain
-     an uppercase letter, a lowercase letter, a number,
-     and a special character.`
-  }
-  if(findValidPassword(password)==true){
-    passwordError.textContent = "";
+
+  // If all validations pass, create the user
+  if (firstNameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "") {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Account created successfully
+        const user = userCredential.user;
+        alert("Account created successfully!");
+        window.location.href = "./home.html"; // Redirect to home page after successful signup
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(`Error: ${errorMessage} (${errorCode})`);
+         // Display the error code/message
+         if (errorCode === "auth/email-already-in-use") {
+          emailError.textContent = "Email is already in use. Please use a different email.";
+        }
+        if (errorCode === "auth/invalid-email") {
+          emailError.textContent = "Invalid email address. Please enter a valid email.";
+        }
+      });
   }
 });
 
-
-//writing the function for the password validation
-function findValidPassword(password){
+// Function to validate password
+function findValidPassword(password) {
   const hasUpperCase = /[A-Z]/.test(password);
   const hasLowerCase = /[a-z]/.test(password);
   const hasNumber = /[0-9]/.test(password);
@@ -98,45 +88,38 @@ function findValidPassword(password){
   const isLengthValid = password.length >= 8;
 
   return hasUpperCase && hasLowerCase && hasNumber && hasSpecialChar && isLengthValid;
-
 }
 
-//writing the function for the email validation
-function findValidEmail(email){
-  const specialCharecter = email.indexOf('@');
-  if(specialCharecter===-1){
-      return false
+// Function to validate email
+function findValidEmail(email) {
+  const specialCharacter = email.indexOf('@');
+  if (specialCharacter === -1) {
+    return false;
   }
-  let front = email.slice(0,specialCharecter);
-  let back = email.slice(specialCharecter+1);
-  if(!front || !back){
-      return false
+  let front = email.slice(0, specialCharacter);
+  let back = email.slice(specialCharacter + 1);
+  if (!front || !back) {
+    return false;
   }
-  if(back.indexOf('.')===-1){
-      return false
+  if (back.indexOf('.') === -1) {
+    return false;
   }
   const validity = /^[a-zA-Z0-9._-]+$/;
-  if(validity.test(front) && validity.test(back)){
-      return true
-  }
-  return false
+  return validity.test(front) && validity.test(back);
 }
 
-
-//writing code for the password in eye and eye slash
-
+// Code for the password eye toggle
 let eyeButton = document.querySelector(".right-icon");
-eyeButton.addEventListener('click', (eye)=>{
-  eye.preventDefault();
+eyeButton.addEventListener('click', (event) => {
+  event.preventDefault();
   let password = document.getElementById("password");
-  if(password.type ==="password"){
-    password.type="text";
+  if (password.type === "password") {
+    password.type = "text";
     eyeButton.classList.remove('fa-eye-slash');
     eyeButton.classList.add('fa-eye');
-  }
-  else{
+  } else {
     password.type = "password";
     eyeButton.classList.remove('fa-eye');
     eyeButton.classList.add('fa-eye-slash');
   }
-})
+});
