@@ -80,8 +80,18 @@ else if (/\s/.test(lastName.substring(0, 3))) {
   }
 
   // Validate password
-  if (!findValidPassword(password)) {
-    passwordError.textContent = `Password is invalid. It must be at least 8 characters long, contain an uppercase letter, a lowercase letter, a number, and a special character.`;
+  if(password.trim() === ""){
+    passwordError.textContent = "Please enter the password."
+  }else if(/[A-Z]/.test(password)==false){
+    passwordError.textContent="Password must contain an uppercase letter."
+  }else if(/[a-z]/.test(password)==false){
+    passwordError.textContent="Password must contain an lowercase letter."
+  }else if(/[0-9]/.test(password)==false){
+    passwordError.textContent="Password must contain a number."
+  }else if(/[@$!%*?&]/.test(password)==false){
+    passwordError.textContent="Password must contain a special character."
+  }else if(password.length < 8){
+    passwordError.textContent="Password must be at least 8 characters long."
   }
 
   // If all validations pass, create the user
@@ -99,7 +109,7 @@ else if (/\s/.test(lastName.substring(0, 3))) {
         const errorMessage = error.message;
         alert(`Error: ${errorMessage} (${errorCode})`);
          // Display the error code/message
-         if (errorCode === "auth/email-already-in-use") {
+        if (errorCode === "auth/email-already-in-use") {
           emailError.textContent = "Email is already in use. Please use a different email.";
         }
         if (errorCode === "auth/invalid-email") {
@@ -108,17 +118,6 @@ else if (/\s/.test(lastName.substring(0, 3))) {
       });
   }
 });
-
-// Function to validate password
-function findValidPassword(password) {
-  const hasUpperCase = /[A-Z]/.test(password);
-  const hasLowerCase = /[a-z]/.test(password);
-  const hasNumber = /[0-9]/.test(password);
-  const hasSpecialChar = /[@$!%*?&]/.test(password);
-  const isLengthValid = password.length >= 8;
-
-  return hasUpperCase && hasLowerCase && hasNumber && hasSpecialChar && isLengthValid;
-}
 
 // Function to validate email
 function findValidEmail(email) {

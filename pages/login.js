@@ -59,28 +59,22 @@ logInBtn.addEventListener("click", function(event){
   if(findValidEmail(email)==true){
     emailError.textContent = "";
   }
-  //code for password validation
-  if(findValidPassword(password)==false){
-    passwordError.textContent = `Password is invalid. It must be at least 8 characters long, contain
-     an uppercase letter, a lowercase letter, a number,
-     and a special character.`
-  }
-  if(findValidPassword(password)==true){
-    passwordError.textContent = "";
+
+  //code for Password validation
+  if(password.trim() === ""){
+    passwordError.textContent = "Please enter the password."
+  }else if(/[A-Z]/.test(password)==false){
+    passwordError.textContent="Password must contain an uppercase letter."
+  }else if(/[a-z]/.test(password)==false){
+    passwordError.textContent="Password must contain an lowercase letter."
+  }else if(/[0-9]/.test(password)==false){
+    passwordError.textContent="Password must contain a number."
+  }else if(/[@$!%*?&]/.test(password)==false){
+    passwordError.textContent="Password must contain a special character."
+  }else if(password.length < 8){
+    passwordError.textContent="Password must be at least 8 characters long."
   }
 });
-
-//writing the function for the password validation
-function findValidPassword(password){
-  const hasUpperCase = /[A-Z]/.test(password);
-  const hasLowerCase = /[a-z]/.test(password);
-  const hasNumber = /[0-9]/.test(password);
-  const hasSpecialChar = /[@$!%*?&]/.test(password);
-  const isLengthValid = password.length >= 8;
-
-  return hasUpperCase && hasLowerCase && hasNumber && hasSpecialChar && isLengthValid;
-
-}
 
 //writing the function for the email validation
 function findValidEmail(email){
