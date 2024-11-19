@@ -20,6 +20,7 @@ const auth = getAuth();
 let emailError = document.getElementById("emailError");
 let passwordError = document.getElementById("passwordError");
 let firstNameError = document.getElementById("firstNameError");
+let lastNameError = document.getElementById("lastNameError");
 
 // Handle form submission
 let signUpForm = document.getElementById("signup-form");
@@ -37,12 +38,18 @@ signUpForm.addEventListener("submit", function (e) {
   emailError.textContent = "";
   passwordError.textContent = "";
   firstNameError.textContent = "";
+  lastNameError.textContent = "";
 
   // Validate first name
   if (firstName.trim() === "") {
     firstNameError.textContent = "Please enter your first name.";
   } else if (firstName.length < 3 || firstName.length > 20) {
     firstNameError.textContent = "First name must be between 3 and 20 characters.";
+  } else if (/\d/.test(firstName)) {
+    firstNameError.textContent = "Please enter the name";
+  } 
+  if(/\d/.test(lastName)){
+    lastNameError.textContent = "Please enter the name";
   }
 
   // Validate email

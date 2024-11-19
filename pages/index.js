@@ -20,4 +20,3 @@ fetch("../data/products.json")
     productsItem.appendChild(productDiv);
     }
 });
-
