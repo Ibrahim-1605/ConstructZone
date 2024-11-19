@@ -41,16 +41,40 @@ signUpForm.addEventListener("submit", function (e) {
   lastNameError.textContent = "";
 
   // Validate first name
-  if (firstName.trim() === "") {
-    firstNameError.textContent = "Please enter your first name.";
-  } else if (firstName.length < 3 || firstName.length > 20) {
-    firstNameError.textContent = "First name must be between 3 and 20 characters.";
-  } else if (/\d/.test(firstName)) {
-    firstNameError.textContent = "Please enter a valid name";
-  } 
-  if(/\d/.test(lastName)){
-    lastNameError.textContent = "Please enter a valid name";
-  }
+  // if (firstName.trim() === "") {
+  //   firstNameError.textContent = "Please enter your first name.";
+  // }else if (firstName.length < 3 || firstName.length > 20) {
+  //   firstNameError.textContent = "First name must be between 3 and 20 characters.";
+  // }else if (/\d/.test(firstName)||/[^a-zA-Z0-9\s]/g.test(firstName)) {
+  //   firstNameError.textContent = "Please enter a first valid name";
+  // }else if(lastName.length < 3 || lastName.length > 20){
+  //   lastNameError.textContent = "First name must be between 3 and 20 characters.";
+  // } else if(/\d/.test(lastName)||/[^a-zA-Z0-9\s]/g.test(lastName)){
+  //   lastNameError.textContent = "Please enter a last valid name";
+  // }else if (/\s/.test(firstName.substring(0, 3))||/\s/.test(lastName.substring(0, 3))) {
+  //   lastNameError.textContent = "The first 3 characters cannot contain spaces.";
+  // }
+  // Validate first name
+if (firstName.trim() === "") {
+  firstNameError.textContent = "Please enter your first name.";
+} else if (firstName.length < 3 || firstName.length > 20) {
+  firstNameError.textContent = "First name must be between 3 and 20 characters.";
+} else if (/\d/.test(firstName) || /[^a-zA-Z0-9\s]/g.test(firstName)) {
+  firstNameError.textContent = "Please enter a valid first name.";
+} else if (/\s/.test(firstName.substring(0, 3))) {
+  firstNameError.textContent = "The first 3 characters of your first name cannot contain spaces.";
+}
+
+// Validate last name
+if (lastName.trim() === "") {
+  lastNameError.textContent = "Please enter your last name.";
+} else if (lastName.length < 3 || lastName.length > 20) {
+  lastNameError.textContent = "Last name must be between 3 and 20 characters.";
+} else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/g.test(lastName)) {
+  lastNameError.textContent = "Please enter a valid last name.";
+} else if (/\s/.test(lastName.substring(0, 3))) {
+  lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
+}
 
   // Validate email
   if (!findValidEmail(email)) {
