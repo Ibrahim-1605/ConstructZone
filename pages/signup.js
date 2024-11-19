@@ -46,10 +46,10 @@ signUpForm.addEventListener("submit", function (e) {
   } else if (firstName.length < 3 || firstName.length > 20) {
     firstNameError.textContent = "First name must be between 3 and 20 characters.";
   } else if (/\d/.test(firstName)) {
-    firstNameError.textContent = "Please enter the name";
+    firstNameError.textContent = "Please enter valid the name";
   } 
   if(/\d/.test(lastName)){
-    lastNameError.textContent = "Please enter the name";
+    lastNameError.textContent = "Please enter valid the name";
   }
 
   // Validate email
