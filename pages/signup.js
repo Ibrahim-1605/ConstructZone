@@ -40,39 +40,37 @@ signUpForm.addEventListener("submit", function (e) {
   firstNameError.textContent = "";
   lastNameError.textContent = "";
 
-  // Validate first name
-  // if (firstName.trim() === "") {
-  //   firstNameError.textContent = "Please enter your first name.";
-  // }else if (firstName.length < 3 || firstName.length > 20) {
-  //   firstNameError.textContent = "First name must be between 3 and 20 characters.";
-  // }else if (/\d/.test(firstName)||/[^a-zA-Z0-9\s]/g.test(firstName)) {
-  //   firstNameError.textContent = "Please enter a first valid name";
-  // }else if(lastName.length < 3 || lastName.length > 20){
-  //   lastNameError.textContent = "First name must be between 3 and 20 characters.";
-  // } else if(/\d/.test(lastName)||/[^a-zA-Z0-9\s]/g.test(lastName)){
-  //   lastNameError.textContent = "Please enter a last valid name";
-  // }else if (/\s/.test(firstName.substring(0, 3))||/\s/.test(lastName.substring(0, 3))) {
-  //   lastNameError.textContent = "The first 3 characters cannot contain spaces.";
-  // }
-  // Validate first name
+// Validate first name
 if (firstName.trim() === "") {
   firstNameError.textContent = "Please enter your first name.";
-} else if (firstName.length < 3 || firstName.length > 20) {
+}
+//first name should be minimum 3 chracter and maximum 20 character
+else if (firstName.length < 3 || firstName.length > 20) {
   firstNameError.textContent = "First name must be between 3 and 20 characters.";
-} else if (/\d/.test(firstName) || /[^a-zA-Z0-9\s]/g.test(firstName)) {
+}
+//validation for the number do not come in the first name
+else if (/\d/.test(firstName) || /[^a-zA-Z0-9\s]/g.test(firstName)) {
   firstNameError.textContent = "Please enter a valid first name.";
-} else if (/\s/.test(firstName.substring(0, 3))) {
+}
+//validation for the spaces comes between the names
+else if (/\s/.test(firstName.substring(0, 3))) {
   firstNameError.textContent = "The first 3 characters of your first name cannot contain spaces.";
 }
 
 // Validate last name
 if (lastName.trim() === "") {
   lastNameError.textContent = "Please enter your last name.";
-} else if (lastName.length < 3 || lastName.length > 20) {
+}
+//last name should be minimum 3 chracter and maximum 20 character
+else if (lastName.length < 3 || lastName.length > 20) {
   lastNameError.textContent = "Last name must be between 3 and 20 characters.";
-} else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/g.test(lastName)) {
+} 
+//validation for the number do not come in the last name
+else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/g.test(lastName)) {
   lastNameError.textContent = "Please enter a valid last name.";
-} else if (/\s/.test(lastName.substring(0, 3))) {
+} 
+//validation for the spaces comes between the names
+else if (/\s/.test(lastName.substring(0, 3))) {
   lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
 }
 
@@ -88,6 +86,7 @@ if (lastName.trim() === "") {
 
   // If all validations pass, create the user
   if (firstNameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "") {
+    lastNameError.textContent = "";
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Account created successfully
