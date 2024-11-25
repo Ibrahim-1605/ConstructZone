@@ -105,8 +105,8 @@ span{
     width: 100%;
 }
 .product-item{
-    box-shadow: 5px 3px 3px rgb(41, 41, 41);
-    border-radius: 5px;
+    box-shadow: 4px 3px 3px rgb(41, 41, 41);
+    border-radius: 3px;
     background-color: #ffffff;
     padding: 1rem;
     width: 28rem;
@@ -135,12 +135,13 @@ span{
 }
 .h1{
     font-size: 2rem;
+    padding-top: 0.6rem;
 }
 /* All product styling */
 .h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }   
 /* completing home region */
 /* styling footer region */
@@ -174,6 +175,16 @@ footer{
 }
 .footer a:hover{
     color: #FCA311;
+}
+.footer-logo{
+    display: flex;
+}
+.footer-logo img{
+    height: 4rem;
+    width: 4rem;
+}
+.footer-logo h1{
+    padding-top:1rem ;
 }
 .email{
     position: relative;

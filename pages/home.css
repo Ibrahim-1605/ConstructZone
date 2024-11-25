@@ -45,6 +45,9 @@ body{
     height: 3.7rem;
     width: 3.7rem;
 }
+.logo h1{
+    padding-top: 1rem;
+}
 /* completing header region */
 /* home page region */
 #home{
@@ -130,15 +133,16 @@ nav{
     width: 100%;
 }
 .product-item{
-    box-shadow: 5px 3px 3px rgb(41, 41, 41);
-    border-radius: 5px;
+    box-shadow: 4px 2px 3px rgb(41, 41, 41);
+    border-radius: 3px;
     background-color: #ffffff;
     padding: 1rem;
-    width: 28rem;
+    width: 20rem;
+    height: 25rem;
     transition: all 1s;
 }
 .product-item:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .rating{
     color: #14213D;
@@ -151,11 +155,11 @@ nav{
     border-radius: 3px;
 }
 .product-item p{
-    width: 23rem;
+    width: 15rem;
 }
 .products img{
-    height: 20rem;
-    width: 26rem;
+    height: 10rem;
+    width: 18rem;
     border-radius: 8px;
 }
 /* search bar styling */
@@ -220,6 +224,16 @@ footer{
 .footer1 a{
     color: #ffffff;
     text-decoration: none;
+}
+.footer-logo{
+    display: flex;
+}
+.footer-logo img{
+    height: 4rem;
+    width: 4rem;
+}
+.footer-logo h1{
+    padding-top:1rem ;
 }
 .email{
     position: relative;

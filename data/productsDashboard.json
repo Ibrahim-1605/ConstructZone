@@ -1,0 +1,226 @@
+[
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Lucky_Cement_Portland_Cement_Type1_50kg_20131030.jpg",
+      "product_name": "Premium Cement (50kg)",
+      "product_description": "High-quality cement for large-scale construction. Offers superior strength and durability.",
+      "rating": 4.5,
+      "price": 12000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ODcSainbUxmMEqOAZDH4RRZkvdnvDC_Egg&s",
+      "product_name": "Steel Iron Rods (12mm, 100m)",
+      "product_description": "Corrosion-resistant steel iron rods for reinforced concrete structures.",
+      "rating": 4.7,
+      "price": 15000
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/10mm-aggregate.jpg",
+      "product_name": "Crushed Stone Aggregate (5-10mm, 1 ton)",
+      "product_description": "Premium crushed stone for construction projects like concrete mixing and road building.",
+      "rating": 4.3,
+      "price": 11000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwgWxIaB7dShh1ctoR6Yrh_OmmsacBoSVbqQ&s",
+      "product_name": "Red Clay Bricks (1000 pcs)",
+      "product_description": "Heat-resistant red clay bricks for building strong walls and structures.",
+      "rating": 4.6,
+      "price": 13500
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Cement_w_taczce.jpg",
+      "product_name": "Portable Concrete Mixer 400L",
+      "product_description": "Electric concrete mixer with a 400L capacity, ideal for large projects.",
+      "rating": 4.8,
+      "price": 25000
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Caterpillar_330B_Hydraulic_Excavator_side_-_Hillsboro%2C_Oregon.JPG",
+      "product_name": "Hydraulic Excavator (30 Ton)",
+      "product_description": "Heavy-duty 30-ton hydraulic excavator for earthmoving and excavation tasks.",
+      "rating": 4.9,
+      "price": 950000
+    },
+    {
+      "image": "https://images.pexels.com/photos/154141/pexels-photo-154141.jpeg",
+      "product_name": "Heavy-Duty Scaffolding System (200m)",
+      "product_description": "Sturdy scaffolding system suitable for construction on high-rise buildings.",
+      "rating": 4.6,
+      "price": 55000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf4IATtL8Qp62TPEC_7MLJCdPspxG9mVXEBg&s",
+      "product_name": "Cement Mixer Truck (8m³)",
+      "product_description": "A truck for transporting and mixing cement, perfect for large-scale operations.",
+      "rating": 4.7,
+      "price": 180000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQHFklUyiLzIYqziox7d78AP5iO3TqrncMg&s",
+      "product_name": "Concrete Batching Plant (60m³/hr)",
+      "product_description": "Automatic concrete batching plant with a capacity of 60m³/hr, ideal for large construction projects.",
+      "rating": 4.4,
+      "price": 95000
+    },
+    {
+      "image": "https://images.pexels.com/photos/10923309/pexels-photo-10923309.jpeg",
+      "product_name": "Tower Crane (200m Reach)",
+      "product_description": "Heavy-duty tower crane with a reach of up to 200m, designed for skyscraper construction.",
+      "rating": 4.7,
+      "price": 300000
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Einhell_TC-MA_1300.JPG",
+      "product_name": "Automatic Brick Cutting Machine",
+      "product_description": "Efficient and precise automatic brick cutting machine for large brick production.",
+      "rating": 4.6,
+      "price": 12000
+    },
+    {
+      "image": "https://c.pxhere.com/photos/58/c6/compactor_heavy_machine_pressure_construction_machinery_yellow-792332.jpg!d",
+      "product_name": "Soil Compactor Machine (10 Ton)",
+      "product_description": "Heavy-duty soil compactor used in road construction and foundation works.",
+      "rating": 4.5,
+      "price": 65000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGsYSPiV3TUzZhq-SKn786LqjTbI9SREmytw&s",
+      "product_name": "Wheel Loader (15 Ton)",
+      "product_description": "Versatile wheel loader for material handling and digging on construction sites.",
+      "rating": 4.8,
+      "price": 180000
+    },
+    {
+      "image": "https://live.staticflickr.com/8192/8091126947_0c479ebf60_b.jpg",
+      "product_name": "Concrete Pump (50m)",
+      "product_description": "High-efficiency concrete pump with a 50m reach for construction sites with elevated structures.",
+      "rating": 4.7,
+      "price": 75000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbWqu4ivc_sd5WSKx92mKRuxMKQz12i_OiAw&s",
+      "product_name": "Steel Beams (10m, 5 Tons)",
+      "product_description": "Durable steel beams for structural support in large construction projects.",
+      "rating": 4.6,
+      "price": 12000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFHxqm2u_uMCoIJ0_WP6ZeSub9AfqqQv85Q&s",
+      "product_name": "Road Roller (12 Ton)",
+      "product_description": "12-ton road roller designed for compacting large areas of soil and asphalt.",
+      "rating": 4.7,
+      "price": 130000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSssTa50x6vq6fUz2dD02WF_sMhvgHVR-rfJw&s",
+      "product_name": "Heavy Duty Cable Reel (1000m)",
+      "product_description": "Durable cable reel designed for transporting and managing long electrical cables.",
+      "rating": 4.3,
+      "price": 15000
+    },
+    {
+      "image": "https://live.staticflickr.com/6201/6063642662_b0d5c18d41_b.jpg",
+      "product_name": "Steel Plates (5x10 ft, 10mm thick)",
+      "product_description": "High-quality steel plates used for various construction and industrial applications.",
+      "rating": 4.5,
+      "price": 25000
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL4_JWwGYnSKIGQ_MRD3fmjbv6gAZ92ljviw&s",
+      "product_name": "Gantry Crane (50 Ton)",
+      "product_description": "Heavy-duty gantry crane for lifting and moving large materials on construction sites.",
+      "rating": 4.6,
+      "price": 250000
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Trennschleifer_stihl.jpg",
+      "product_name": "Concrete Cutting Machine",
+      "product_description": "Powerful machine for cutting concrete with high precision for construction and renovation.",
+      "rating": 4.7,
+      "price": 12000
+    },
+    {
+      "product_name": "Cement (10 bags)",
+      "image": "https://i0.wp.com/pixahive.com/wp-content/uploads/2020/12/Cement-bags-250882-pixahive.jpg?fit=1560%2C707&ssl=1",
+      "product_description": "High-quality cement suitable for various construction applications, providing excellent bonding strength and durability.",
+      "rating": 4.5,
+      "price": 12000
+    },
+    {
+      "product_name": "Iron Rod",
+      "image":"https://storage.needpix.com/rsynced_images/iron-rods-474810_1280.jpg",
+      "product_description": "Durable iron rods for reinforcement in concrete construction. Strong and rust-resistant for long-lasting performance.",
+      "rating": 4.7,
+      "price": 13500
+    },
+    {
+      "product_name": "Electrical Components",
+      "image": "https://c.pxhere.com/photos/d0/c4/electricity_the_executive_board_the_construction_of_the_technology_a_work_in_progress_color_plastic_technical_status-676539.jpg!d",
+      "product_description": "A wide range of electrical components including switches, cables, and outlets for safe and efficient electrical installations.",
+      "rating": 4.2,
+      "price": 8000
+    },
+    {
+      "product_name": "Paints",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/824Painters_using_scaffolding%2C_construction_catwalks_and_Boysen_paints_in_Bulacan_40.jpg/1200px-824Painters_using_scaffolding%2C_construction_catwalks_and_Boysen_paints_in_Bulacan_40.jpg?20210207092248",
+      "product_description": "Premium quality paints available in a variety of finishes and colors, perfect for both exterior and interior applications.",
+      "rating": 4.6,
+      "price": 30000
+    },
+    {
+      "product_name": "Sand",
+      "image": "https://storage.needpix.com/rsynced_images/sand-pile.jpg",
+      "product_description": "Clean and fine sand ideal for use in construction, plastering, and concrete mixing.",
+      "rating": 4.3,
+      "price": 15000
+    },
+    {
+      "product_name": "Bricks",
+      "image": "https://c.pxhere.com/photos/27/d4/bricks_brickwork_load_new_construction_project_contractor_building-946582.jpg!d",
+      "product_description": "High-strength bricks made from high-quality clay, designed for both load-bearing and non-load-bearing walls.",
+      "rating": 4.8,
+      "price": 12000
+    },
+    {
+      "product_name": "Steel Beams",
+      "image": "https://c.pxhere.com/photos/2f/e4/steel_construction_wyatt_frank_steel_construction_materials_steel-459266.jpg!d",
+      "product_description": "Heavy-duty steel beams for structural support in large-scale construction projects. Resistant to bending and deformation.",
+      "rating": 4.9,
+      "price": 25000
+    },
+    {
+      "product_name": "Tiles",
+      "image": "https://c.pxhere.com/photos/9b/c0/soil_tiles_square_diamonds-1335632.jpg!d",
+      "product_description": "Decorative and durable ceramic tiles for flooring and walls, available in various designs, colors, and sizes.",
+      "rating": 4.4,
+      "price": 20000
+    },
+    {
+      "product_name": "Concrete Blocks",
+      "image": "https://www.jkcement.com/wp-content/uploads/2023/08/production-building-blocks-composition-foam-blocks-blocks-construction-isolate-1024x683-jpg.webp",
+      "product_description": "Strong concrete blocks for foundation and wall construction, designed for efficient and cost-effective building.",
+      "rating": 4.6,
+      "price": 7500
+    },
+    {
+      "product_name": "Plywood",
+      "image": "https://c.pxhere.com/photos/4c/67/wood_pile_texture_timber_wooden_stack_brown_lumber-704447.jpg!d",
+      "product_description": "High-quality plywood sheets for use in framing, furniture, and other construction applications. Offers strong and durable support.",
+      "rating": 4.3,
+      "price": 10500
+    },
+    {
+      "product_name": "Waterproofing Membrane",
+      "image": "https://c.pxhere.com/photos/ab/a8/roof_architecture_pattern_structure_building_construction_cover_waterproof-667252.jpg!d",
+      "product_description": "A flexible, durable membrane designed to prevent water penetration in roofs, foundations, and basements.",
+      "rating": 4.8,
+      "price": 13000
+    },
+    {
+      "product_name": "Lumber",
+      "image": "https://c.pxhere.com/photos/c5/1f/nature_wood_firewood_holzstapel_stack_like_make_wood_timber_industry-989749.jpg!d",
+      "product_description": "High-quality lumber for framing, decking, and construction projects. Available in various grades and sizes.",
+      "rating": 4.5,
+      "price": 20000
+    }
+]
