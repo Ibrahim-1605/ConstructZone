@@ -1,6 +1,7 @@
  // Import the functions you need from the SDKs you need
  import { initializeApp} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+ 
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -22,6 +23,7 @@ let logIn = document.getElementById("submit");
 logIn.addEventListener("click", function(event){
 let password = document.getElementById("password").value;
 let email = document.getElementById("email").value;
+let mistakeError= document.getElementById("mistakeError");
 const auth=getAuth();
 signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
@@ -33,7 +35,12 @@ signInWithEmailAndPassword(auth, email, password)
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert(errorCode,errorMessage);
+    // alert(errorCode,errorMessage);
+    if(email=="" && password==""){
+      mistakeError.textContent="";
+    }else{
+      mistakeError.textContent = "Please enter a valid email address and Password.";
+    }
   });
 });
 
@@ -48,6 +55,7 @@ logInBtn.addEventListener("click", function(event){
 
   let email=document.getElementById("email").value;
   let password=document.getElementById("password").value;
+  let mistakeError= document.getElementById("mistakeError").value;
 
   emailError.textContent = "";
   passwordError.textContent = "";
@@ -74,6 +82,8 @@ logInBtn.addEventListener("click", function(event){
   }else if(password.length < 8){
     passwordError.textContent="Password must be at least 8 characters long."
   }
+
+  
 });
 
 //writing the function for the email validation
@@ -83,7 +93,7 @@ function findValidEmail(email){
       return false
   }
   let front = email.slice(0,specialCharecter);
-  let back = email.slice(specialCharecter+1);
+  let back = email.slice(specialCharecter+4);
   if(!front || !back){
       return false
   }

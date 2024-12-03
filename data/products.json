@@ -1,74 +1,170 @@
 [
     {
-        "product_name": "Cement",
-        "product_image": "https://i0.wp.com/pixahive.com/wp-content/uploads/2020/12/Cement-bags-250882-pixahive.jpg?fit=1560%2C707&ssl=1",
-        "product_description": "High-quality cement suitable for various construction applications, providing excellent bonding strength and durability.",
-        "rating": 4.5
-    },
-    {
-        "product_name": "Iron Rod",
-        "product_image":"https://storage.needpix.com/rsynced_images/iron-rods-474810_1280.jpg",
-        "product_description": "Durable iron rods for reinforcement in concrete construction. Strong and rust-resistant for long-lasting performance.",
-        "rating": 4.7
-    },
-    {
-        "product_name": "Electrical Components",
-        "product_image": "https://c.pxhere.com/photos/d0/c4/electricity_the_executive_board_the_construction_of_the_technology_a_work_in_progress_color_plastic_technical_status-676539.jpg!d",
-        "product_description": "A wide range of electrical components including switches, cables, and outlets for safe and efficient electrical installations.",
-        "rating": 4.2
-    },
-    {
-        "product_name": "Paints",
-        "product_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/824Painters_using_scaffolding%2C_construction_catwalks_and_Boysen_paints_in_Bulacan_40.jpg/1200px-824Painters_using_scaffolding%2C_construction_catwalks_and_Boysen_paints_in_Bulacan_40.jpg?20210207092248",
-        "product_description": "Premium quality paints available in a variety of finishes and colors, perfect for both exterior and interior applications.",
-        "rating": 4.6
-    },
-    {
-        "product_name": "Sand",
-        "product_image": "https://storage.needpix.com/rsynced_images/sand-pile.jpg",
-        "product_description": "Clean and fine sand ideal for use in construction, plastering, and concrete mixing.",
-        "rating": 4.3
-    },
-    {
-        "product_name": "Bricks",
-        "product_image": "https://c.pxhere.com/photos/27/d4/bricks_brickwork_load_new_construction_project_contractor_building-946582.jpg!d",
-        "product_description": "High-strength bricks made from high-quality clay, designed for both load-bearing and non-load-bearing walls.",
-        "rating": 4.8
-    },
-    {
-        "product_name": "Steel Beams",
-        "product_image": "https://c.pxhere.com/photos/2f/e4/steel_construction_wyatt_frank_steel_construction_materials_steel-459266.jpg!d",
-        "product_description": "Heavy-duty steel beams for structural support in large-scale construction projects. Resistant to bending and deformation.",
-        "rating": 4.9
-    },
-    {
-        "product_name": "Tiles",
-        "product_image": "https://c.pxhere.com/photos/9b/c0/soil_tiles_square_diamonds-1335632.jpg!d",
-        "product_description": "Decorative and durable ceramic tiles for flooring and walls, available in various designs, colors, and sizes.",
-        "rating": 4.4
-    },
-    {
-        "product_name": "Concrete Blocks",
-        "product_image": "https://www.jkcement.com/wp-content/uploads/2023/08/production-building-blocks-composition-foam-blocks-blocks-construction-isolate-1024x683-jpg.webp",
-        "product_description": "Strong concrete blocks for foundation and wall construction, designed for efficient and cost-effective building.",
-        "rating": 4.6
-    },
-    {
-        "product_name": "Plywood",
-        "product_image": "https://c.pxhere.com/photos/4c/67/wood_pile_texture_timber_wooden_stack_brown_lumber-704447.jpg!d",
-        "product_description": "High-quality plywood sheets for use in framing, furniture, and other construction applications. Offers strong and durable support.",
-        "rating": 4.3
-    },
-    {
-        "product_name": "Waterproofing Membrane",
-        "product_image": "https://c.pxhere.com/photos/ab/a8/roof_architecture_pattern_structure_building_construction_cover_waterproof-667252.jpg!d",
-        "product_description": "A flexible, durable membrane designed to prevent water penetration in roofs, foundations, and basements.",
-        "rating": 4.8
-    },
-    {
-        "product_name": "Lumber",
-        "product_image": "https://c.pxhere.com/photos/c5/1f/nature_wood_firewood_holzstapel_stack_like_make_wood_timber_industry-989749.jpg!d",
-        "product_description": "High-quality lumber for framing, decking, and construction projects. Available in various grades and sizes.",
-        "rating": 4.5
-    }
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/2/BY/XE/YL/76985305/sankar-super-power-cement-500x500.jpg",
+        "name": "Pozzolana Portland Cement (PPC)",
+        "price": "500",
+        "unit":"/bag",
+        "rating": "4.7",
+        "brand": "Shankar Super Power",
+        "quantity": "50 bags",
+        "material": "Calcined lime, Clay and Reactive silica",
+        "description": "Pozzolana Portland Cement (PPC) in Shankar Cement is a blended cement made by mixing clinker with pozzolanic materials like fly ash. It offers enhanced durability, reduced permeability, and improved resistance to chemical attacks. PPC is ideal for construction in aggressive environments, offering better workability and long-term strength development. It is also environmentally friendly, reducing carbon emissions by incorporating industrial by-products.",
+        "address": "Coromandel Towers, 93, Santhome High Road, Karpagam Avenue, R.A.Puram, Karpagam Avenue, Raja Annamalai Puram, Chennai, Tamil Nadu 600028",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 8098863459"
+      },
+      {
+        "image": "https://bl-i.thgim.com/public/companies/rgtl52/article35955018.ece/alternates/FREE_1200/blsteel",
+        "name": "Kamdhenu 12mm TMT Bars",
+        "price": "200",
+        "unit":"/bar",
+        "rating": "4.8",
+        "brand": "Kamdhenu",
+        "quantity": "150",
+        "material": "Mild Steel",
+        "description": "Kamdhenu 12mm TMT Bars are high-strength, thermo-mechanically treated steel bars used in construction. They offer excellent ductility, tensile strength, and resistance to corrosion, making them ideal for reinforced concrete structures. These bars undergo a special quenching process, enhancing their durability and performance under extreme conditions. Kamdhenu 12mm TMT Bars ensure superior quality, safety, and longevity in building and infrastructure projects.",
+        "address": " Old no: 26 new no:17 kalappa, street, Park Town, Achariya, Chennai, Tamil Nadu 600003",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 8763492351"
+      },
+      {
+        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/electrical-wire/o/w/a/-original-imaghsbhtq729ags.jpeg?q=90&crop=false",
+        "name": "HAVELLS wires ",
+        "price": "3000",
+        "unit":"",
+        "rating": "4.0",
+        "brand": "Havells",
+        "quantity": "2.5 sq/mm Green 45 meter Wire (Green)",
+        "material": "HRFR PVC and copper",
+        "description": "Havells wires are high-quality electrical cables designed for safe and efficient power transmission. They are made from pure copper or aluminum conductors, ensuring excellent conductivity and minimal energy loss. Known for their durability, flexibility, and fire-resistant properties, Havells wires are ideal for residential, commercial, and industrial applications. These wires also comply with international safety standards, providing reliable performance in various electrical systems.",
+        "address": "No: 366, Rajiv Gandhi Salai, near Prince Info City I, near by kothai women hostel, Kandhanchavadi, Perungudi, Chennai, Tamil Nadu 600096.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 7430986572"
+      },
+      {
+        "image": "https://services.ibo.com/media/v1/products/images/d5162c4b-7ffc-4708-9049-dca67aff832d/nippon-multipurpose-20-l-wall-primer-1.jpeg?c_type=C2",
+        "name": "Nippon Paint Atom 2-in-1 Interior & Exterior White Emulsion Wall Paint  (1 L)",
+        "price": "500",
+        "unit":"/bucket",
+        "rating": "4.2",
+        "brand": "Nippon Paint",
+        "quantity": "20 bucket (1 litre)",
+        "material": "White Emulsion",
+        "description": "Nippon Paint Atom 2-in-1 Interior & Exterior White Emulsion Wall Paint (1 L) is a versatile, high-quality paint suitable for both indoor and outdoor use. It offers a smooth, durable finish with excellent coverage and long-lasting protection against weathering. This emulsion paint is easy to apply, fast-drying, and resistant to stains and fading. Ideal for enhancing the aesthetic appeal of walls, it provides a fresh, clean white look while ensuring the walls stay protected from moisture and environmental damage.",
+        "address": " 9th Floor, PRESTIGE PALLADIUM BAYAN, 129, 140, Greams Rd, Thousand Lights West, Thousand Lights, Chennai, Tamil Nadu 600006",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 7324108462"
+      },
+      {
+        "image": "https://images.jdmagicbox.com/quickquotes/images_main/badarpur-sand-for-construction-orange-2226490271-8xnnrw0o.jpg",
+        "name": "TRS sand",
+        "price": "24",
+        "unit":"/kg",
+        "rating": "4.7",
+        "brand": "TRS",
+        "quantity": "4 ton(4000 kg)",
+        "material": "construction sand",
+        "description": "TRS Construction Sand is a high-quality, finely graded sand used for various construction purposes. It is ideal for making concrete, plastering, and bricklaying due to its consistent texture and strength. This sand ensures superior workability and durability in construction projects. With its clean and fine particles, TRS Construction Sand helps achieve a smooth finish and enhances the overall quality of the building structures.",
+        "address": "No 122, Kalaimagal School Road, Pillaiyarpatti, Thanjavur - 613403.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 9843501243"
+      },
+      {
+        "image": "https://5.imimg.com/data5/SELLER/Default/2024/8/442820870/EC/EF/TY/143751584/construction-red-brick-500x500.jpg",
+        "name": "Red Bricks",
+        "price": "15",
+        "unit":"/brick",
+        "rating": "4.2",
+        "brand": "Red Bricks Company",
+        "quantity": "2000",
+        "material": "Clay and others",
+        "description": "Red construction bricks are traditional building materials made from clay, fired at high temperatures to achieve strength and durability. Known for their rich red color, these bricks are commonly used in the construction of walls, foundations, and other structural elements. They offer excellent thermal insulation, fire resistance, and long-lasting performance. Red bricks are also environmentally friendly, made from natural materials, and provide an aesthetic appeal with their classic look.",
+        "address": "36Q8+H5M, Anna Nagar 3rd Main Rd, Block U, Anna Nagar, Chennai, Tamil Nadu 600040",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 7430919834"
+      },
+      {
+        "image": "https://5.imimg.com/data5/SELLER/Default/2023/3/PN/TZ/CE/2660701/mild-steel-beam-500x500-500x500.JPG",
+        "name": "Rolling Mild Steel Beam",
+        "price": "51",
+        "unit":"/kg",
+        "rating": "3.9",
+        "brand": "Rolling",
+        "quantity": "Minimum 1 ton(1000 kg)",
+        "material": "Steel",
+        "description": "Rolling Mild Steel Beams are structural steel components widely used in construction for framing and support in buildings, bridges, and other infrastructure projects. Made from mild steel, these beams are known for their flexibility, strength, and durability. They are shaped through a rolling process to create various profiles, such as I-beams or H-beams, offering excellent load-bearing capacity. Rolling Mild Steel Beams are corrosion-resistant and can withstand heavy loads, making them ideal for long-lasting and stable structural applications.",
+        "address": "No.2, Nelson Manickam Rd, Railway Colony, Aminjikarai, Chennai, Tamil Nadu 600029.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 9483424702"
+      },
+      {
+        "image": "https://blog.aramsco.com/hs-fs/hubfs/ceramic.jpg?width=415&name=ceramic.jpg",
+        "name": "Kajaria Floor Tiles(10 cases)",
+        "price": "792",
+        "unit":"/case",
+        "rating": "3.5",
+        "brand": "Kajaria",
+        "quantity": "10 cases (1 case= 10 pieces)",
+        "material": "Clay,Porcelain,Plastic,glass,asphalt,or asbestos cement,Fiberboard or other sound-absorbing materials and Glass blocks",
+        "description": "Kajaria Floor Tiles (10 cases) are high-quality ceramic tiles designed for residential and commercial flooring. These tiles are durable, easy to maintain, and come in a wide variety of designs and finishes, including glossy, matte, and textured surfaces. Known for their resistance to stains, scratches, and moisture, Kajaria tiles are perfect for areas with high foot traffic. The 10 cases offer sufficient coverage for medium to large spaces, ensuring a stylish and long-lasting flooring solution.",
+        "address": "OLD NO.88/16,NEW NO.119/2A,AMURTHAM NAGAR, near AI SHIPPING, Numbal, Iyyappanthangal, Chennai, Tamil Nadu 600077",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 8098863412"
+      },
+      {
+        "image": "https://builders9.com/wp-content/uploads/2022/06/9-4-3-2.jpg",
+        "name": "Cement Rectangular Concrete Paver Block",
+        "price": "10",
+        "unit":"/block",
+        "rating": "3.6",
+        "brand": "Concrete blocks",
+        "quantity": "500",
+        "material": "Cement",
+        "description": "Cement Rectangular Concrete Paver Blocks are durable and versatile paving solutions made from high-strength concrete. These blocks are designed for use in driveways, walkways, and outdoor areas, providing a strong and aesthetically pleasing surface. They are weather-resistant, easy to install, and require minimal maintenance. The rectangular shape offers flexibility in design, allowing for various patterns and configurations to suit different landscaping and construction needs.",
+        "address": "112, Vallalar St, Moorthy Samy Colony, Padi, Chennai, Tamil Nadu 600050.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 7430986572"
+      },
+      {
+        "image": "https://5.imimg.com/data5/LR/OI/MY-39094180/cement.jpg",
+        "name": "50 Kg Ultratech Cement, Grade 43",
+        "price": "400",
+        "unit":"/bag",
+        "rating": "4.8",
+        "brand": "Ultratech cement",
+        "quantity": "30 bags ( 1 bag= 50 kg)",
+        "material": "Ultra tech",
+        "description": "50 Kg UltraTech Cement, Grade 43, is a high-quality, fast-setting cement ideal for general construction applications. It offers excellent strength and durability, making it suitable for making concrete, plastering, and masonry work. With its superior quality and consistent performance, it ensures long-lasting structures. UltraTech Cement, Grade 43, is widely used in residential, commercial, and industrial projects due to its reliable bonding and early strength development.",
+        "address": "No. 23, 1st Floor, Royal Estate, Mount Road, Venkta Puram, Saidapet, Chennai, Tamil Nadu 600015.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 9876123456"
+      },
+      {
+        "image": "https://thumbs.dreamstime.com/b/wall-made-up-small-square-tiles-arranged-grid-pattern-vary-color-texture-shades-gray-beige-white-some-have-343074721.jpg",
+        "name": "PGVT Floor Tiles (Heavy Duty)",
+        "price": "5500",
+        "unit":"/case",
+        "rating": "4.7",
+        "brand": "DELTAWARE",
+        "quantity": "5 case (1 case= 10 pieces)",
+        "material": "Clay,Porcelain,Plastic,glass,asphalt,or asbestos cement,Fiberboard or other sound-absorbing materials and Glass blocks",
+        "description": "PGVT (Polished Glazed Vitrified Tiles) Heavy Duty Floor Tiles are high-performance tiles designed for areas with high foot traffic and heavy use. These tiles are made from a durable vitrified material, providing exceptional strength, scratch resistance, and low water absorption. The polished finish offers an elegant, glossy appearance, making them ideal for both residential and commercial spaces. With their high durability and easy maintenance, PGVT Heavy Duty Floor Tiles ensure long-lasting, attractive flooring in high-traffic areas like offices, shopping malls, and corridors.",
+        "address": "10, Noombal Main Road Noombal, Velappanchavadi, Chennai, Tamil Nadu 600077.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 9080102134"
+      },
+      {
+        "image": "https://5.imimg.com/data5/SELLER/Default/2023/9/339942349/MS/HB/YR/70699216/12mm-jindal-panther-tmt-bar-500x500.jpeg",
+        "name": "Jindal Panther 550D 12 MM TMT Rebar",
+        "price": "186",
+        "unit":"/bar",
+        "rating": "4.3",
+        "brand": "Jindal Panther",
+        "quantity": "150",
+        "material": "MS Bar",
+        "description": "Jindal Panther 550D 12 MM TMT Rebar is a high-strength, thermo-mechanically treated steel reinforcement bar used in construction. It offers superior tensile strength, enhanced ductility, and resistance to corrosion, making it ideal for reinforced concrete structures. The 550D grade ensures excellent performance in seismic zones and high-stress areas. Jindal Panther TMT Rebars are known for their durability, better bonding with concrete, and increased safety, providing long-term strength and stability to buildings, bridges, and other infrastructure projects.",
+        "address": " AWFIS, 6th Floor, Center Point 3, Manapakkam, Chennai, Tamil Nadu 600089.",
+        "country_of_orgin":"Made in India",
+        "contact": "+91 9876986572"
+      }
 ]

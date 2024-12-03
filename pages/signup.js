@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
-
+import { saveUserDetails } from "../adminJS/users.js";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAxwTaDl4OakGDqYk8faRbHW1czCAtl7ME",
@@ -44,34 +44,61 @@ signUpForm.addEventListener("submit", function (e) {
 if (firstName.trim() === "") {
   firstNameError.textContent = "Please enter your first name.";
 }
-//first name should be minimum 3 chracter and maximum 20 character
+// Validation for numbers or special characters (excluding spaces and letters)
+else if (/[^A-Za-z\s]/.test(firstName)) {
+  firstNameError.textContent = "Please enter a valid first name without numbers or special characters.";
+}
+// Check if first name starts or ends with spaces
+else if (/\s/.test(firstName)) {
+  firstNameError.textContent = "The first 3 characters of your first name cannot contain spaces.";
+}
+// First name should be between 3 and 20 characters
 else if (firstName.length < 3 || firstName.length > 20) {
   firstNameError.textContent = "First name must be between 3 and 20 characters.";
 }
-//validation for the number do not come in the first name
-else if (/\d/.test(firstName) || /[^a-zA-Z0-9\s]/g.test(firstName)) {
-  firstNameError.textContent = "Please enter a valid first name.";
-}
-//validation for the spaces comes between the names
-else if (/\s/.test(firstName.substring(0, 3))) {
-  firstNameError.textContent = "The first 3 characters of your first name cannot contain spaces.";
+else {
+  // No error, proceed with valid first name
+  firstNameError.textContent = "";  // Clear any previous error
 }
 
+// // Validate last name
+// if (lastName.trim() === "") {
+//   lastNameError.textContent = "Please enter your last name.";
+// }
+// //last name should be minimum 3 chracter and maximum 20 character
+// else if (lastName.length < 3 || lastName.length > 20) {
+//   lastNameError.textContent = "Last name must be between 3 and 20 characters.";
+// } 
+// //validation for the number do not come in the last name
+// else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/.test(lastName)) {
+//   lastNameError.textContent = "Please enter a valid last name.";
+// }
+// //validation for the spaces comes between the names
+// else if (/\s/.test(lastName.substring(0, 3))) {
+//   lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
+// }
+// //validation for the last name for the special character
+// else if (/[^A-Za-z\s]/.test(lastName)) {
+//   lastNameError.textContent = "Please enter a valid name without using special characters.";
+// }
 // Validate last name
 if (lastName.trim() === "") {
   lastNameError.textContent = "Please enter your last name.";
 }
-//last name should be minimum 3 chracter and maximum 20 character
+// Validation for numbers or special characters (excluding spaces and letters)
+else if (/[^A-Za-z\s]/.test(lastName)) {
+  lastNameError.textContent = "Please enter a valid last name without numbers or special characters.";
+}
+// Check if last name starts or ends with spaces
+else if (/\s/.test(lastName)) {
+  lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
+}
+// Last name should be between 3 and 20 characters
 else if (lastName.length < 3 || lastName.length > 20) {
   lastNameError.textContent = "Last name must be between 3 and 20 characters.";
-} 
-//validation for the number do not come in the last name
-else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/.test(lastName)) {
-  lastNameError.textContent = "Please enter a valid last name.";
 }
-//validation for the spaces comes between the names
-else if (/\s/.test(lastName.substring(0, 3))) {
-  lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
+else {
+  lastNameError.textContent = "";
 }
 
   // Validate email
@@ -99,10 +126,17 @@ else if (/\s/.test(lastName.substring(0, 3))) {
     lastNameError.textContent = "";
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Account created successfully
         const user = userCredential.user;
-        alert("Account created successfully!");
-        window.location.href = "./home.html"; // Redirect to home page after successful signup
+        // Save user details after successful registration
+        saveUserDetails(firstName, lastName, user.email)
+          .then(() => {
+            alert('Registered successfully! Logging in...');
+            window.location.href = '/';  // Redirect to homepage or another page
+          })
+          .catch((error) => {
+            console.error('Error saving user details: ', error);
+          });
+        // Account created successfully
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -126,7 +160,7 @@ function findValidEmail(email) {
     return false;
   }
   let front = email.slice(0, specialCharacter);
-  let back = email.slice(specialCharacter + 1);
+  let back = email.slice(specialCharacter + 4);
   if (!front || !back) {
     return false;
   }
