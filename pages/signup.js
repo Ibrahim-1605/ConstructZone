@@ -131,7 +131,7 @@ else {
         saveUserDetails(firstName, lastName, user.email)
           .then(() => {
             alert('Registered successfully! Logging in...');
-            window.location.href = '/';  // Redirect to homepage or another page
+            window.location.href = './home.html';  // Redirect to homepage or another page
           })
           .catch((error) => {
             console.error('Error saving user details: ', error);
