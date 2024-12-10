@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Construct Zone</title>
     <link rel="stylesheet" href="./home.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 </head>
 <body>
     <header class="header">
@@ -14,7 +14,6 @@
             <h1 class="h1">Construct<span>Zone</span></h1>
         </div>  
         <div class="aboutCartFav">
-            <!-- <button type="button" class="logOut" id="logIn">Log In</button> -->
             <button type="button" class="logOut" id="logOut">Log Out</button>
             <div class="userInformation" id="userInformation">
                 <div><i class="fa-solid fa-circle-user"></i></div>
@@ -34,10 +33,10 @@
             </div>
         </div>
         <section id="home">
-            <div class="searchBar">   
+            <!-- <div class="searchBar">   
                 <i class="fa-solid fa-magnifying-glass"></i>    
                 <input type="text" id="search" placeholder="Search Products or brands"/>
-            </div>
+            </div> -->
             <div class="searchedProducts" style="display: none;"></div>
             <div>
                 <h2 class="h2"><p>All Products</p></h2>
@@ -61,17 +60,17 @@
                 <h2>Company</h2>
                 <div><a href="../details/aboutus.html">About us</a></div>
             </div>
-            <div>
+            <!-- <div>
                 <h2>Share feedback for progress</h2>
                 <h5>Gathering Advice for the Improvement</h5>
                 <div>
                     <div class="email">
                         <i class="fa-regular fa-envelope"></i>
                         <input type="text" id="feedback" placeholder="Input your email"/>
-                        <a href=""><button type="submit" class="button">Send</button></a>
+                        <button type="submit" class="button">Send</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="footer1">
             <div>&copy; 2024 ConstructZone</div>
@@ -83,4 +82,6 @@
 <script src="./home.js" type="module" defer></script>
 <script type="module" src="../adminJS/statecheck.js"></script>
 <script type="module" src="./adminJS/fireBase.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
 </html>

@@ -30,36 +30,9 @@ fetch("../data/productsDashboard.json")
         let productDiv = document.createElement("div");
         productDiv.classList.add("product-item");
         // redirecting to the product-details in page when click the json objects
-        productDiv.addEventListener("click", function(){
-          let productDetailsDiv=document.createElement("div");
-          productDetailsDiv.classList.add("products-details");
-          
-          productDetailsDiv.innerHTML=`
-          <div class="product-description">
-          <div><img src="${product.image}" alt="${product.name}"/></div>
-          <div>
-          <h1>${product.name}</h1>
-          <p><span class="text">Product Name:</span> ${product.name}</p>
-          <p><span class="text">Price:</span> ₹${product.price}<span class="quantity_limit">${product.unit}</span></p>
-          <p><span class="text">Rating:</span> ${product.rating}</p>
-          <p><span class="text">Quantity:</span> ${product.quantity}</p>
-          <p><span class="text">Brand:</span> ${product.brand}</p>
-          <p><span class="text">Material Used:</span> ${product.material}</p>
-          <p><span class="text">Country of Orgin:</span> ${product.country_of_orgin}</p>
-          <p><span class="text">Description:</span> ${product.description}</p>
-          <p><span class="text1">Contact :-</span></p>
-          <p><span class="text">Address:</span> ${product.address}</p>
-          <p><span class="text">Phone:</span> ${product.contact}</p>
-          <button class="close-button">Close</button>
-          </div>
-          </div>`
-
-          document.body.appendChild(productDetailsDiv);
-          
-          let closeButton = productDetailsDiv.querySelector('.close-button');
-          closeButton.addEventListener('click', function() {
-              productDetailsDiv.remove();
-          });
+        productDiv.addEventListener("click", function(e){
+          e.preventDefault();
+          window.location.href=`./productItem.html?id=${product.id}`;
       });
         productDiv.innerHTML=`<img src="${product.image}"/>
         <h3>${product.name}</h3>
@@ -81,38 +54,12 @@ logOutBtn.addEventListener('click',function(e){
     }
 }); 
 
-//write the code for the search function
+//code for the search bar to write the function
 function searchFunction(){
-  const query = document.getElementById("search").value.toLowerCase();
-  const searchedProducts = document.getElementById("products");
-  // Clear previous results
-  searchedProducts.innerHTML = '';
-  searchedProducts.style.display = 'none'; // Hide container by default
-  // If the input field is empty, exit the function
-  if (query.trim() === "") {
-      return;
-  }
-  // Filter the movies based on the search query
-  const filterProducts = product.filter(products =>
-      products.name.toLowerCase().includes(query) || products.brand.toLowerCase().includes(query)
-  );
-  if (filterProducts.length > 0) {
-      // Display filtered productss
-      searchedProducts.style.display = 'block'; // Show container
-      filterProducts.forEach(products => {
-          searchedProducts.innerHTML += `
-              <a  href="products_details.html?id=${product.id}">
-                <div class="products_name">${product.name}</div>
-              </a>`;
-      });
-  } else {
-      // Show "no results" message
-      searchedProducts.style.display = 'block'; // Show container for "no results" message
-      searchedProducts.style.color = 'white='
-      searchedProducts.innerHTML = `<p > No movies found for "${query}".</p>`;
-  }
+  
 }
- 
+
+//this is code for the user name getting in the home page
 onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in

@@ -276,6 +276,8 @@ footer{
     height: 2rem;
 }
 .button{
+    width: fit-content;
+    position: sticky;
     padding: 0.3rem 2rem;
     background-color: #ffffff;
     color: black;
@@ -288,6 +290,7 @@ footer{
     color: black;
 }
 .button:hover{
+    width: fit-content;
     padding: 0.3rem 2rem;
     border: #FCA311 ;
     background-color: #FCA311;

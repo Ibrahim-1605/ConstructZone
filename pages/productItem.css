@@ -1,0 +1,81 @@
+/* styling for the header poertion */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #E5E5E5;
+}
+.header{
+    display: flex;
+    gap: 0.4rem;
+    padding: 1rem;
+    background-color: #14213D;
+    color: #ffffff;
+}
+span{
+    color: #FCA311;
+}
+.header h1{
+    padding-top: 0.5rem;
+    color: #ffffff;
+}
+.header img{
+    height: 3.7rem;
+    width: 3.7rem;
+}
+/* Header portion styling completed */
+/* styling for the product details */
+.products-details{
+    
+    background-color: #ffffff;
+    
+    margin: 0px auto;
+    border:2px solid #14213D;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+.product-description{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    overflow-y:scroll ;
+    justify-content: space-evenly;
+}
+.product-description img{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.product-description h1{
+    width: 40rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    text-shadow: #14213da4 1px 0 10px;
+}
+.product-description p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    width: 40rem;
+    text-shadow: #14213da4 1px 0 10px;
+}
+.product-description .text{
+    font-weight: bold;
+    color: #14213D;
+}
+.quantity_limit{
+    color: #14213D;
+    font-size: large;
+}
+.text1{
+    color: #FCA311;
+    font-weight: bold;
+    text-shadow: #FCA311 1px 0 10px;
+}
