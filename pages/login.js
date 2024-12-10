@@ -1,7 +1,7 @@
  // Import the functions you need from the SDKs you need
  import { initializeApp} from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
- 
+ import { getUserDetailsByEmail } from "../adminJS/users.js";
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,7 +16,7 @@
  };
 
  // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 
 let logIn = document.getElementById("submit");
 
@@ -29,7 +29,14 @@ signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    window.location.href="./home.html";
+    getUserDetailsByEmail(user.email)
+      .then((userDetails) => {
+        if (userDetails) {
+          console.log(`First name : ${userDetails.firstName}\n lastname : ${userDetails.lastName}\nemail : ${userDetails.email}`)
+          window.location.href="./home.html";
+        }
+      })
+      .catch((error) => console.log('Error fetching user details:', error));
     // ...
   })
   .catch((error) => {

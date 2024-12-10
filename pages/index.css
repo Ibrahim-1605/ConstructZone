@@ -230,10 +230,6 @@ footer{
     color: black;
 }
 
-.quantity_limit{
-    color: #14213D;
-}
-
 /* .product-details {
     position: fixed;
     top: 0;
@@ -246,6 +242,10 @@ footer{
     width: 300px;
     text-align: center;
 } */
+
+.quantity_limit{
+    color: #14213D;
+}
 
 .products-details{
     overflow-y:scroll ;

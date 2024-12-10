@@ -16,6 +16,7 @@ body{
     background-color: #14213D;
     color: #ffffff;
     padding: 1rem;
+    padding-bottom: 1rem;
 }
 .logIn{
     background-color: #ffffff;
@@ -47,6 +48,22 @@ body{
 }
 .logo h1{
     padding-top: 1rem;
+}
+/* styling for log Out */
+.logOut{
+    padding: 0.4rem 1.6rem;
+    background-color: #ffffff;
+    color: #14213D;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+    transition: 1s all;
+}
+.logOut:hover{
+    background-color: #FCA311;
+    border: 3px solid #FCA311;
 }
 /* completing header region */
 /* home page region */
@@ -118,7 +135,11 @@ nav{
 }
 .userInformation{
     display: flex;
-    gap: 0.5rem;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+}
+.userInformation i{
+    font-size: 1.8rem;
 }
 /* Products elements */
 #products{
@@ -271,4 +292,68 @@ footer{
     border: #FCA311 ;
     background-color: #FCA311;
     color: black;
+}
+/* styling for the product details */
+.products-details{
+    overflow-y:scroll ;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 0px auto;
+    border:2px solid #14213D;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+.product-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.product-description img{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.product-description h1{
+    width: 40rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    text-shadow: #14213da4 1px 0 10px;
+}
+.product-description p{
+    line-height: 2rem;
+    font-size: 1.1rem;
+    width: 40rem;
+    text-shadow: #14213da4 1px 0 10px;
+}
+.product-description .text{
+    font-weight: bold;
+    color: #14213D;
+}
+.close-button {
+    margin-top: 10px;
+    margin-left: 33rem;
+    padding: 5px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.close-button:hover {
+    background-color: #d32f2f;
+}
+
+.quantity_limit{
+    color: #14213D;
+    font-size: large;
+}
+.text1{
+    color: #FCA311;
+    font-weight: bold;
+    text-shadow: #FCA311 1px 0 10px;
 }
