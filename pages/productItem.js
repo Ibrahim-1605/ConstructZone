@@ -24,7 +24,7 @@ fetch("../data/productsDashboard.json")
           <p><span class="text">Description:</span> ${product.description}</p>
           <p><span class="text1">Contact :-</span></p>
           <p><span class="text">Address:</span> ${product.address}</p>
-          <p><span class="text">Phone:</span> ${product.contact}</p>
+          <p><span class="text">Phone:</span> <a href="tel:${product.contact}">${product.contact}</a></p>
           </div>
           </div>`
         }
