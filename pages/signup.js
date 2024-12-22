@@ -61,26 +61,6 @@ else {
   firstNameError.textContent = "";  // Clear any previous error
 }
 
-// // Validate last name
-// if (lastName.trim() === "") {
-//   lastNameError.textContent = "Please enter your last name.";
-// }
-// //last name should be minimum 3 chracter and maximum 20 character
-// else if (lastName.length < 3 || lastName.length > 20) {
-//   lastNameError.textContent = "Last name must be between 3 and 20 characters.";
-// } 
-// //validation for the number do not come in the last name
-// else if (/\d/.test(lastName) || /[^a-zA-Z0-9\s]/.test(lastName)) {
-//   lastNameError.textContent = "Please enter a valid last name.";
-// }
-// //validation for the spaces comes between the names
-// else if (/\s/.test(lastName.substring(0, 3))) {
-//   lastNameError.textContent = "The first 3 characters of your last name cannot contain spaces.";
-// }
-// //validation for the last name for the special character
-// else if (/[^A-Za-z\s]/.test(lastName)) {
-//   lastNameError.textContent = "Please enter a valid name without using special characters.";
-// }
 // Validate last name
 if (lastName.trim() === "") {
   lastNameError.textContent = "Please enter your last name.";

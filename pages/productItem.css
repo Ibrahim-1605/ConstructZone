@@ -28,18 +28,6 @@ span{
 }
 /* Header portion styling completed */
 /* styling for the product details */
-.products-details{
-    
-    background-color: #ffffff;
-    
-    margin: 0px auto;
-    border:2px solid #14213D;
-    height: 100vh;
-    width: 100vw;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-}
 .product-description{
     display: flex;
     flex-wrap: wrap;
@@ -58,16 +46,15 @@ span{
     width: 40rem;
     font-size: 2.5rem;
     padding-bottom: 3rem;
-    text-shadow: #14213da4 1px 0 10px;
 }
 .product-description p{
     line-height: 2rem;
     font-size: 1.1rem;
     width: 40rem;
-    text-shadow: #14213da4 1px 0 10px;
+    font-weight:450;
 }
 .product-description .text{
-    font-weight: bold;
+    font-weight: 700;
     color: #14213D;
 }
 .quantity_limit{
@@ -77,5 +64,34 @@ span{
 .text1{
     color: #FCA311;
     font-weight: bold;
-    text-shadow: #FCA311 1px 0 10px;
+}
+.orderButton {
+    margin-top: 1rem;
+    padding: 0.5rem 2.1rem;
+    font-size: 1rem;
+    background-color: #14213D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.orderButton:hover {
+    background-color: #283b66;
+}
+.buttonBack{
+    display: flex;
+    justify-content: space-between;
+}
+.backButton{
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    background-color: rgba(241, 8, 8, 0.833);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.backButton:hover{
+    background-color:rgb(180, 20, 20) ;
 }

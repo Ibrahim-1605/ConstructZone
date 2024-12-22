@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="./feedback.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("J6pzEAdL-hfOeYfPt");
+      })();
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="../assests/images/constructZone_logo.png" alt="constructZone-logo"/>
+        <h1>Construct<span>Zone</span></h1>
+    </div>
+    <div class="feedbackForm">
+        <form action="">
+            <h1>Share your feedback</h1>
+            <div><label for="name">Name:</label></div>
+            <div>
+                <input type="text" id="name" placeholder="Enter your Name" required/>
+            </div>
+            <div id="nameError" class="error"></div>
+            <div><label for="email">Email:</label></div>
+            <div>
+                <input type="email" id="email" placeholder="Enter your Email" required/>
+            </div>
+            <div id="emailError" class="error"></div>
+            <div><label for="message">Message:</label></div>
+            <div>
+                <textarea id="message" name="message" rows="7" cols="75" placeholder="Enter your feedback" required></textarea>
+            </div>
+            <div id="messageError" class="error"></div>
+            <button type="button" class="button" id="button">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="./feedback.js" defer></script>
+</html>

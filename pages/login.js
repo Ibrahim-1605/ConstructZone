@@ -115,7 +115,6 @@ function findValidEmail(email){
 }
 
 //writing code for the password in eye and eye slash
-
 let eyeButton = document.querySelector(".right-icon");
 eyeButton.addEventListener('click', (eye)=>{
   eye.preventDefault();

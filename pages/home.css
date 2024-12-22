@@ -158,6 +158,7 @@ nav{
     border-radius: 3px;
     background-color: #ffffff;
     padding: 1rem;
+    cursor: pointer;
     width: 20rem;
     height: 25rem;
     transition: all 1s;
@@ -192,19 +193,20 @@ nav{
 }
 .searchBar i{
     position:absolute ;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     top: 50%; 
     left: 20px;
     color: #4f4f4f;
     transform: translateY(-50%);
-    padding-right: 5px;
+    padding-right: 7px;
+    padding-left: 5px;
     border-right: 1px solid #4f4f4f;
 }
 .searchBar input{
-    padding-left: 2.2rem;
-    width:45rem ;
-    height: 2rem;
-    font-size: 1rem;
+    padding-left: 3rem;
+    width:50rem ;
+    height: 2.5rem;
+    font-size: 1.21rem;
 }
 .searchBar button{
     height:2rem;
@@ -212,7 +214,7 @@ nav{
 }
 /* All product styling */
 .h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: 3rem;
     padding-bottom: 2rem;
 }   
@@ -235,6 +237,9 @@ footer{
 .footer a{
     color: #ffffff;
     text-decoration: none;
+}
+.footer a:hover{
+    color: #FCA311;
 }
 .footer1{
     display: flex;
@@ -276,10 +281,10 @@ footer{
     height: 2rem;
 }
 .button{
-    width: fit-content;
-    position: sticky;
-    padding: 0.3rem 2rem;
+    padding: 0.25rem 2rem;
     background-color: #ffffff;
+    margin-top: 0.8rem;
+    width: fit-content;
     color: black;
     border-radius: 4px;
     font-size:medium;
@@ -290,8 +295,7 @@ footer{
     color: black;
 }
 .button:hover{
-    width: fit-content;
-    padding: 0.3rem 2rem;
+    padding: 0.3rem 2.2rem;
     border: #FCA311 ;
     background-color: #FCA311;
     color: black;
@@ -336,7 +340,7 @@ footer{
     font-weight: bold;
     color: #14213D;
 }
-.close-button {
+.order-button {
     margin-top: 10px;
     margin-left: 33rem;
     padding: 5px 15px;
@@ -347,7 +351,7 @@ footer{
     border-radius: 2px;
 }
 
-.close-button:hover {
+.order-button:hover {
     background-color: #d32f2f;
 }
 

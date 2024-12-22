@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="./orderPage.css"/>
+</head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+<script type="text/javascript">
+  (function() {
+  emailjs.init("J6pzEAdL-hfOeYfPt");
+  })();
+</script>
+<body>
+    <div class="header">
+        <img src="../assests/images/constructZone_logo.png" alt="constructZone-logo"/>
+        <h1>Construct<span>Zone</span></h1>
+    </div>
+    <div class="orderForm">
+        <form>
+            <h1>Contact Sellers</h1>
+            <div><label for="name">Name:</label></div>
+            <div><input id="name" type="text" placeholder="Enter your name" required/></div>
+            <div id="nameError" class="error"></div>
+            <div><label for="email">Email:</label></div>
+            <div><input id="email" type="email" placeholder="Enter your email" required/></div>
+            <div id="emailError" class="error"></div>
+            <div><label for="product">Product name:</label></div>
+            <div><input id="product" type="text" placeholder="Enter the products you need" required/></div>
+            <div id="productError" class="error"></div>
+            <div><label for="quantity">Required Quantity:</label></div>
+            <div><input id="quantity" type="text" placeholder="Enter the quantity you require" required/></div>
+            <div id="quantityError" class="error"></div>
+            <div><label for="number">Phone:</label></div>
+            <div><input type="tel" id="number" placeholder="Enter your mobile number" required/></div>
+            <div id="numberError" class="error"></div>
+            <div><label for="address">Address:</label></div>
+            <div><input id="address" type="text" placeholder="Enter your address" required/></div>
+            <div id="addressError" class="error"></div>
+            <div><label for="city">City</label></div>
+            <div><input id="city" type="text" placeholder="Enter your city name" required/></div>
+            <div id="cityError" class="error"></div>
+            <div><label for="message">Description:</label></div>
+            <div><textarea id="message" name="message" rows="10" cols="83" placeholder="Enter your description about product/ expectation about product" required></textarea></div>
+            <div id="messageError" class="error"></div>
+            <button type="button" class="button" onclick="validation()" id="button">Send</button>
+        </form>
+    </div>
+</body>
+<script src="./orderPage.js" defer></script>
+</html>

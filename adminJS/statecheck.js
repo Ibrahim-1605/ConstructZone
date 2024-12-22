@@ -3,7 +3,6 @@ import { getAuth, onAuthStateChanged,signOut } from "https://www.gstatic.com/fir
 const logOutBtn = document.getElementById('logOut');
 const logIn = document.getElementById('logIn');
 
-
 const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
   if (user) {

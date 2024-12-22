@@ -107,6 +107,7 @@ span{
 .product-item{
     box-shadow: 4px 3px 3px rgb(41, 41, 41);
     border-radius: 3px;
+    cursor: pointer;    
     background-color: #ffffff;
     padding: 1rem;
     width: 28rem;
@@ -212,8 +213,10 @@ footer{
     height: 2rem;
 }
 .button{
-    padding: 0.3rem 2rem;
+    padding: 0.25rem 2rem;
     background-color: #ffffff;
+    margin-top: 0.8rem;
+    width: fit-content;
     color: black;
     border-radius: 4px;
     font-size:medium;
@@ -224,31 +227,18 @@ footer{
     color: black;
 }
 .button:hover{
-    padding: 0.3rem 2rem;
+    padding: 0.3rem 2.2rem;
     border: #FCA311 ;
     background-color: #FCA311;
     color: black;
-}
-
-/* .product-details {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 300px;
-    text-align: center;
-} */
+}   
 
 .quantity_limit{
     color: #14213D;
 }
 
 .products-details{
-    overflow-y:scroll ;
+    overflow-y:scroll;
     background-color: #ffffff;
     padding: 2rem;
     margin: 0px auto;
@@ -274,19 +264,17 @@ footer{
     width: 40rem;
     font-size: 2.5rem;
     padding-bottom: 3rem;
-    text-shadow: #14213da4 1px 0 10px;
 }
 .product-description p{
     line-height: 2rem;
     font-size: 1.1rem;
     width: 40rem;
-    text-shadow: #14213da4 1px 0 10px;
 }
 .product-description .text{
     font-weight: bold;
     color: #14213D;
 }
-.close-button {
+button {
     margin-top: 10px;
     margin-left: 33rem;
     padding: 5px 15px;
@@ -297,6 +285,6 @@ footer{
     border-radius: 2px;
 }
 
-.close-button:hover {
+button:hover {
     background-color: #d32f2f;
 }
