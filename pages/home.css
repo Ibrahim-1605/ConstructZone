@@ -364,3 +364,359 @@ footer{
     font-weight: bold;
     text-shadow: #FCA311 1px 0 10px;
 }
+/* Applying style for the home page */
+@media (max-width:786px){
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: inherit;
+        background-color: #E5E5E5;
+        
+    }
+    /* styling header region */
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background-color: #14213D;
+        color: #ffffff;
+        padding: 0.6rem;
+    }
+    .header a{
+        text-decoration: none;
+        padding-left: 2rem;
+        color: #ffffff;
+    }
+    .logo{
+        display: flex;
+    }
+    .logo img{
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+    .logo h1{
+        padding-top: 0.5rem;
+    }
+    /* styling for log Out */
+    .logOut{
+        background-color: #ffffff;
+        color: black;
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: fit-content;
+        margin-top: 0.3rem;
+        padding: 0.3rem 1rem;
+        height: fit-content;
+        border-radius: 4px;
+        transition: all 1s;
+    }
+    .logOut:hover{
+        background-color: #FCA311;
+        border: 3px solid #FCA311;
+    }
+    /* completing header region */
+    /* home page region */
+    #home{
+        padding: 1.5rem;
+    }
+    /* background image and text styling */
+    .homePage{
+        background-image: url(../assests/images/Screenshot_2024-11-04_230304.png);
+        background-color:  rgba(0, 0, 0, 0.418);
+        height: 30rem;
+        width: 100%;
+        color: #ffffff;
+        font-size: 1rem; 
+        position: relative;  
+    }
+    .layer {
+        background-color: rgba(4, 9, 69, 0.557);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .h1Modify{
+        padding-top: 8rem;
+        padding-left: 1rem ;
+    }
+    span{
+        color: #FCA311;
+    }
+    .exploreMore{
+        color: black;
+        background-color: #ffffff;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.3rem 1rem;
+        font-size: 0.4rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        transition: all 1s;
+    }
+    .exploreMore a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: bolder;
+    }
+    .exploreMore:hover{
+        background-color: #FCA311;
+        padding: 0.3rem 1rem;
+    }
+    .h1{
+        font-size: 1.4rem;
+        padding-top: 0.6rem;
+        width: 100%;
+    }
+    /* Navigation styling */
+    nav{
+        padding-top: 0.5rem;
+    }
+    /* add to cart,favorites and user information*/
+    .aboutCartFav{
+        display: inline-block;
+        justify-content: center;
+        padding-top: 0.5rem;
+    }
+    .userInformation{
+        display: flex;
+        margin-top: 1rem;
+        gap: 0.6rem;
+        font-size: 1.3rem;
+    }
+    .userInformation i{
+        font-size: 1.4rem;
+    }
+    /* Products elements */
+    #products{
+        padding: 2rem 0rem;
+        width: fit-content;
+    }
+    #products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .product-item{
+        box-shadow: 4px 2px 3px rgb(41, 41, 41);
+        border-radius: 3px;
+        background-color: #ffffff;
+        padding: 1rem;
+        cursor: pointer;
+        width: 20rem;
+        height: 25rem;
+        transition: all 1s;
+    }
+    .product-item:hover{
+        transform: scale(1.02);
+    }
+    .rating{
+        color: #14213D;
+        line-height: 2rem;
+    }
+    .ratingNumber{
+        background-color: green;
+        color: #ffffff;
+        padding: 0px 6px;
+        border-radius: 3px;
+    }
+    .product-item p{
+        width: 15rem;
+    }
+    .products img{
+        height: 13rem;
+        width: 18rem;
+        border-radius: 8px;
+    }
+    /* search bar styling */
+    .searchBar{
+        position: relative;
+        padding: 1rem;
+        width: fit-content;
+    }
+    .searchBar i{
+        position:absolute ;
+        font-size: 1.5rem;
+        top: 50%; 
+        left: 20px;
+        color: #4f4f4f;
+        transform: translateY(-50%);
+        padding-right: 7px;
+        padding-left: 5px;
+        border-right: 1px solid #4f4f4f;
+    }
+    .searchBar input{
+        padding-left: 3rem;
+        width:21rem ;
+        height: 2.3rem;
+        font-size: 1.17rem;
+    }
+    .searchBar button{
+        height:2rem;
+        width: 6rem;
+    }
+    /* All product styling */
+    .h2{
+        font-size: 1.7rem;
+        padding-left: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 1rem;
+    }   
+    /* completing home region */
+    /* styling footer region */
+    footer{
+        background-color: #14213D;
+        color: #ffffff;
+    }
+    .footer{
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        line-height: 2rem;
+    }
+    .footer h2{
+        color: #FCA311;
+        padding-top: 2rem;
+    }
+    .footer a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer1{
+        display: flex;
+        justify-content: center;
+        padding:1.4rem;
+        gap: 1rem;
+    }
+    .footer1 a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        color: #FCA311;
+    }
+    .footer-logo{
+        display: flex;
+        gap: 0.3rem;
+        width: 100%;
+    }
+    .footer-logo img{
+        height: 4rem;
+        width: 4rem;
+    }
+    .footer-logo h1{
+        padding-top:1rem ;
+        font-size: 2rem;
+    }
+    .email{
+        position: relative;
+    }
+    .email i{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%; 
+        left: 3px;
+        color: #4f4f4f;
+        border-right: 1px solid #4f4f4f;
+        padding-right: 5px;
+    }
+    .email input{
+        padding-left: 1.5rem;
+        border:2px solid #FCA311;
+        border-radius: 4px;
+        width: 15rem;
+        height: 2rem;
+    }
+    .button{
+        padding: 0.25rem 2rem;
+        background-color: #ffffff;
+        margin-top: 0.8rem;
+        width: fit-content;
+        color: black;
+        border-radius: 4px;
+        font-size:medium;
+        font-weight: 600;
+        transition: all 1s;
+    }
+    .button a{
+        color: black;
+    }
+    .button:hover{
+        padding: 0.3rem 2.2rem;
+        border: #FCA311 ;
+        background-color: #FCA311;
+        color: black;
+    } 
+    /* styling for the product details */
+    .products-details{
+        overflow-y:scroll ;
+        background-color: #ffffff;
+        padding: 2rem;
+        margin: 0px auto;
+        border:2px solid #14213D;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+    }
+    .product-description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .product-description img{
+        width: 40rem;
+        height: 40rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    }
+    .product-description h1{
+        width: 40rem;
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+        text-shadow: #14213da4 1px 0 10px;
+    }
+    .product-description p{
+        line-height: 2rem;
+        font-size: 1.1rem;
+        width: 40rem;
+        text-shadow: #14213da4 1px 0 10px;
+    }
+    .product-description .text{
+        font-weight: bold;
+        color: #14213D;
+    }
+    .order-button {
+        margin-top: 10px;
+        margin-left: 33rem;
+        padding: 5px 15px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    
+    .order-button:hover {
+        background-color: #d32f2f;
+    }
+    
+    .quantity_limit{
+        color: #14213D;
+        font-size: large;
+    }
+    .text1{
+        color: #FCA311;
+        font-weight: bold;
+        text-shadow: #FCA311 1px 0 10px;
+    }
+}

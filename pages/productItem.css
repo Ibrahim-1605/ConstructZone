@@ -10,7 +10,7 @@ body{
 }
 .header{
     display: flex;
-    gap: 0.4rem;
+    gap: 0.3rem;
     padding: 1rem;
     background-color: #14213D;
     color: #ffffff;
@@ -20,11 +20,12 @@ span{
 }
 .header h1{
     padding-top: 0.5rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
 .header img{
-    height: 3.7rem;
-    width: 3.7rem;
+    height: 2.7rem;
+    width: 2.7rem;
 }
 /* Header portion styling completed */
 /* styling for the product details */
@@ -32,25 +33,26 @@ span{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
     overflow-y:scroll ;
     justify-content: space-evenly;
 }
 .product-description img{
-    width: 40rem;
-    height: 40rem;
+    width: 23rem;
+    height: 22rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 10);
 }
 .product-description h1{
-    width: 40rem;
-    font-size: 2.5rem;
-    padding-bottom: 3rem;
+    width: 23rem;
+    font-size: 2.3rem;
+    padding-bottom: 1.5rem;
 }
 .product-description p{
     line-height: 2rem;
     font-size: 1.1rem;
-    width: 40rem;
+    width: 23rem;
     font-weight:450;
 }
 .product-description .text{

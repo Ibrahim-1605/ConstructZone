@@ -38,3 +38,27 @@ p{
 main{
     padding: 2rem;
 }
+/* Making responsive */
+@media (max-width:786px){
+    .header h1{
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .header img{
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+    h2{
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+        color: #14213D;
+    }
+    p{
+        color: #14213D;
+        font-size: 1.25rem;
+        padding-bottom: 2rem;
+    }
+    main{
+        padding: 1.5rem;
+    }
+}

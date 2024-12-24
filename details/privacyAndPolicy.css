@@ -69,3 +69,57 @@ li{
 .para{
     padding-bottom: 0.5rem;
 }
+/* Making responsive */
+@media (max-width:786px){
+    .header h1{
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .header img{
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+        color: #14213D;
+        padding-bottom: 2rem;
+    }
+    .h1{
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+        color: #14213D;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        color: #14213D;
+    }
+    h2{
+        font-size: 1.7rem;
+        padding-bottom: 1.5rem;
+        color: #14213D;
+    }
+    p{
+        color: #14213D;
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+    main{
+        padding: 1.7rem;
+    }
+    ul{
+        padding-bottom: 1rem;
+    }
+    li{
+        color: #14213D;
+        font-size: 1.2rem;
+        padding-bottom: 0.5rem;
+    }
+    .bold{
+        color: #14213D;
+        font-weight: 700;
+    }
+    .para{
+        padding-bottom: 0.5rem;
+    }
+}

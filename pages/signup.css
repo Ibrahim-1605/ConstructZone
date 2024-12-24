@@ -102,3 +102,111 @@ div p{
 #lastNameError{
     line-height: 1rem;
 }
+/* making sing up page for responsive website */
+@media (max-width:786px){
+    *{
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container{
+        display: flex;
+        gap: 1rem;
+    }
+    body{
+        height: 100dvh;
+        font: inherit;
+        overflow-y: hidden;
+        background-color: #E5E5E5;
+    }
+    img{
+        height: 100dvh;
+        width: 90%;
+    }
+    .eye-icon{
+        position: relative;
+    }
+    .eye-icon i{
+        font-size: 16px;
+        color: #4f4f4f;
+        cursor: pointer; /* Indicate interactivity */
+        position: absolute;
+        top: 3.6rem; /* Adjust for alignment */
+        right: 0.6rem;
+        transform: translateY(50%);
+    }
+    input{
+        width: 28rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        background-color: #E5E5E5;
+        border-radius: 4px;
+        border-color: #E5E5E5;
+    }
+    label{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    h1{
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    button{
+        width: 28rem;
+        height: 3.2rem;
+        margin-top: 2rem;
+        background-color: #14213D;
+        color: #ffffff;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+    button:hover{
+        background-color: #FCA311;
+        border-color: #FCA311;
+        color: #000000;
+    }
+    div p{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .nameElement{
+        display: flex;
+        gap:1rem;
+    }
+    #first_name{
+        width: 13.5rem;
+    }
+    #last_name{
+        width: 13.5rem;
+    }
+    .container-item{
+        padding-top: 10rem;
+        padding-right: 8rem;
+    }
+    .signUp-div{
+        width:32rem;
+        line-height:3rem;
+        box-shadow:  7px 3px 3px rgb(41, 41, 41);
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 2rem;
+    }
+    #passwordError{
+        width: 30rem;
+        line-height: 1.2rem;
+    }
+    .error{
+        color: red;
+        font-size: 16px;
+    }
+    #emailError{
+        line-height: 1rem;
+    }
+    #firstNameError{
+        line-height: 1rem;
+    }
+    #lastNameError{
+        line-height: 1rem;
+    }   
+}
