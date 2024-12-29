@@ -312,6 +312,7 @@ button:hover {
         justify-content: space-between;
         background-color: #14213D;
         color: #ffffff;
+        width: 100%;
         padding: 0.6rem;
     }
     .logIn{
@@ -358,7 +359,7 @@ button:hover {
         height: 100%;
     }
     .h1Modify{
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-left: 1rem ;
     }
     span{
@@ -403,7 +404,7 @@ button:hover {
         cursor: pointer;    
         background-color: #ffffff;
         padding: 1rem;
-        width: 23rem;
+        width: 21rem;
         transition: all 1s;
     }
     .product-item:hover{
@@ -425,9 +426,12 @@ button:hover {
     .product-item h1{
         font-size: 2rem;
     }
+    .product-item p{
+        width: 10rem;
+    }
     .products img{
-        height: 20rem;
-        width: 21rem;
+        height: 16rem;
+        width: 19rem;
         border-radius: 8px;
     }
     .h1{
@@ -440,7 +444,7 @@ button:hover {
         font-size: 1.7rem;
         padding-left: 1rem;
         padding-bottom: 0.5rem;
-    }   
+    }
     /* completing home region */
     /* styling footer region */
     footer{
@@ -466,7 +470,7 @@ button:hover {
         display: flex;
         justify-content: center;
         padding:1.4rem;
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .footer1 a{
         color: #ffffff;
@@ -526,16 +530,15 @@ button:hover {
         border: #FCA311 ;
         background-color: #FCA311;
         color: black;
-    }   
-    
+    }
+
     .quantity_limit{
         color: #14213D;
     }
-    
     .products-details{
         overflow-y:scroll;
         background-color: #ffffff;
-        padding: 2rem;
+        padding: 1rem;
         margin: 0px auto;
         border:2px solid #14213D;
         height: 100vh;
@@ -550,20 +553,20 @@ button:hover {
         justify-content: space-evenly;
     }
     .product-description img{
-        width: 40rem;
-        height: 40rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 10);
     }
     .product-description h1{
-        width: 40rem;
-        font-size: 2.5rem;
+        width: 21rem;
+        font-size: 2rem;
         padding-bottom: 3rem;
     }
     .product-description p{
         line-height: 2rem;
         font-size: 1.1rem;
-        width: 40rem;
+        width: 20rem;
     }
     .product-description .text{
         font-weight: bold;
@@ -571,7 +574,7 @@ button:hover {
     }
     button {
         margin-top: 10px;
-        margin-left: 33rem;
+        margin-left: 16rem;
         padding: 5px 15px;
         background-color: #f44336;
         color: white;

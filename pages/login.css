@@ -90,7 +90,7 @@ div p {
     }
     body {
         font: inherit;
-        padding-top: 15rem;
+        padding-top: 12rem;
         padding-left: 0.5rem;
         height: 100vh;
         background-color: #E5E5E5;
@@ -117,7 +117,7 @@ div p {
         box-shadow:  7px 3px 3px rgb(41, 41, 41);
     }
     input {
-        width: 22.5rem;
+        width: 19.5rem;
         height: 2.5rem;
         font-size: 1rem;
         padding: 0.5rem;
@@ -143,7 +143,7 @@ div p {
         font-size: 16px;
     }
     button {
-        width: 22.5rem;
+        width: 19.5rem;
         height: 3.2rem;
         margin-top: 2rem;
         cursor: pointer;
@@ -163,7 +163,7 @@ div p {
         padding-top: 1rem;
     }
     #passwordError{
-        width: 22.5rem;
+        width: 19.5rem;
         line-height: 1.2rem;
     }
 }

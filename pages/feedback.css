@@ -178,7 +178,7 @@ textarea::placeholder{
     padding: 5px;
     margin-top: 0.4rem;
     font-size: 0.9rem;
-    width: 22rem;
+    width: 19rem;
     border: 1.5px solid #FCA311;
     border-radius: 3px;
  }
@@ -194,7 +194,7 @@ textarea::placeholder{
     border: 1.5px solid #FCA311;
     border-radius: 3px;
     margin-top: 0.4rem;
-    width: 22rem;
+    width: 19rem;
  }
  textarea::placeholder{
     font-size: 0.95rem;

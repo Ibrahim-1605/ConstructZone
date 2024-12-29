@@ -47,7 +47,7 @@ body{
     width: 3.7rem;
 }
 .logo h1{
-    padding-top: 1rem;
+    padding-top: 0.6rem;
 }
 /* styling for log Out */
 .logOut{
@@ -441,8 +441,8 @@ footer{
         height: 100%;
     }
     .h1Modify{
-        padding-top: 8rem;
-        padding-left: 1rem ;
+        padding-top: 6rem;
+        padding-left: 1rem;
     }
     span{
         color: #FCA311;
@@ -538,14 +538,14 @@ footer{
     /* search bar styling */
     .searchBar{
         position: relative;
-        padding: 1rem;
+        padding: 0rem;
         width: fit-content;
     }
     .searchBar i{
         position:absolute ;
         font-size: 1.5rem;
         top: 50%; 
-        left: 20px;
+        left: 4px;
         color: #4f4f4f;
         transform: translateY(-50%);
         padding-right: 7px;
@@ -554,9 +554,9 @@ footer{
     }
     .searchBar input{
         padding-left: 3rem;
-        width:21rem ;
+        width:19rem ;
         height: 2.3rem;
-        font-size: 1.17rem;
+        font-size: 1.1rem;
     }
     .searchBar button{
         height:2rem;
@@ -594,7 +594,7 @@ footer{
         display: flex;
         justify-content: center;
         padding:1.4rem;
-        gap: 1rem;
+        gap: 0.5rem;
     }
     .footer1 a{
         color: #ffffff;
@@ -651,72 +651,8 @@ footer{
     }
     .button:hover{
         padding: 0.3rem 2.2rem;
-        border: #FCA311 ;
+        border: #FCA311;
         background-color: #FCA311;
         color: black;
-    } 
-    /* styling for the product details */
-    .products-details{
-        overflow-y:scroll ;
-        background-color: #ffffff;
-        padding: 2rem;
-        margin: 0px auto;
-        border:2px solid #14213D;
-        height: 100vh;
-        width: 100vw;
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-    }
-    .product-description{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .product-description img{
-        width: 40rem;
-        height: 40rem;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 10);
-    }
-    .product-description h1{
-        width: 40rem;
-        font-size: 2.5rem;
-        padding-bottom: 3rem;
-        text-shadow: #14213da4 1px 0 10px;
-    }
-    .product-description p{
-        line-height: 2rem;
-        font-size: 1.1rem;
-        width: 40rem;
-        text-shadow: #14213da4 1px 0 10px;
-    }
-    .product-description .text{
-        font-weight: bold;
-        color: #14213D;
-    }
-    .order-button {
-        margin-top: 10px;
-        margin-left: 33rem;
-        padding: 5px 15px;
-        background-color: #f44336;
-        color: white;
-        border: none;
-        cursor: pointer;
-        border-radius: 2px;
-    }
-    
-    .order-button:hover {
-        background-color: #d32f2f;
-    }
-    
-    .quantity_limit{
-        color: #14213D;
-        font-size: large;
-    }
-    .text1{
-        color: #FCA311;
-        font-weight: bold;
-        text-shadow: #FCA311 1px 0 10px;
     }
 }

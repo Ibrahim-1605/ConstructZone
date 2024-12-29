@@ -172,7 +172,7 @@ span{
     box-shadow:  7px 3px 3px rgb(41, 41, 41);
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     margin-top: 2rem;
     height: fit-content;
 }
@@ -186,12 +186,12 @@ span{
     padding: 5px;
     margin-top: 0.4rem;
     font-size: 1rem;
-    width: 21rem;
+    width: 19rem;
     border: 1.5px solid #FCA311;
     border-radius: 3px;
 }
 .orderForm h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #14213D;
     text-align: center;
     padding-bottom:2rem;
@@ -203,7 +203,7 @@ textarea{
     border: 1.5px solid #FCA311;
     border-radius: 3px;
     margin-top: 0.4rem;
-    width: 21rem;
+    width: 19rem;
 }
 textarea::placeholder{
     font-size: 0.95rem;
@@ -212,13 +212,13 @@ textarea::placeholder{
 .error{
     color: red;
     font-size: 16px;
-    width: 21rem;
+    width: 19rem;
     margin-bottom: 1.4rem;
 }
 /* styling for the submit button */
 .button{
     padding: 0.5rem 2rem;
-    margin-left:66.9% ;
+    margin-left:62% ;
     width: 7rem;
     font-size: 1.2rem;
     height: 3rem;

@@ -119,10 +119,6 @@ div p{
         overflow-y: hidden;
         background-color: #E5E5E5;
     }
-    img{
-        height: 100dvh;
-        width: 90%;
-    }
     .eye-icon{
         position: relative;
     }
@@ -131,12 +127,12 @@ div p{
         color: #4f4f4f;
         cursor: pointer; /* Indicate interactivity */
         position: absolute;
-        top: 3.6rem; /* Adjust for alignment */
+        top: 2.9rem; /* Adjust for alignment */
         right: 0.6rem;
         transform: translateY(50%);
     }
     input{
-        width: 28rem;
+        width: 18rem;
         height: 2.5rem;
         padding: 0.5rem;
         font-size: 1rem;
@@ -153,7 +149,7 @@ div p{
         font-size: 2.5rem;
     }
     button{
-        width: 28rem;
+        width: 18rem;
         height: 3.2rem;
         margin-top: 2rem;
         background-color: #14213D;
@@ -175,22 +171,22 @@ div p{
         gap:1rem;
     }
     #first_name{
-        width: 13.5rem;
+        width: 8.5rem;
     }
     #last_name{
-        width: 13.5rem;
+        width: 8.5rem;
     }
     .container-item{
         padding-top: 10rem;
         padding-right: 8rem;
     }
     .signUp-div{
-        width:32rem;
-        line-height:3rem;
+        width:20rem;
+        line-height:2.5rem;
         box-shadow:  7px 3px 3px rgb(41, 41, 41);
         border-radius: 10px;
         background-color: #ffffff;
-        padding: 2rem;
+        padding: 1rem;
     }
     #passwordError{
         width: 30rem;
