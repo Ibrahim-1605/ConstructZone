@@ -264,8 +264,8 @@ textarea::placeholder{
 }
 .exit-btn {
    position: absolute;
-   top:19rem ;
-   right:3.5rem;
+   top:13.5rem ;
+   right:2rem;
    font-size: 2rem;
    cursor: pointer;
 }
