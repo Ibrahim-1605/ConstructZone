@@ -31,6 +31,7 @@ body{
     padding: 0.5rem 2rem;
     height: fit-content;
     border-radius: 4px;
+    font-size: 1.2rem;
     transition: all 1s;
 }
 .logIn:hover{
@@ -572,9 +573,16 @@ button:hover {
         font-weight: bold;
         color: #14213D;
     }
+    .closeContact{
+        display: flex;
+        margin-top: 2rem;
+        gap: 2rem;
+        justify-content: space-between;
+    }
     button {
         margin-top: 10px;
-        margin-left: 16rem;
+        margin-left: 7rem;
+        margin-right: 1rem;
         padding: 5px 15px;
         background-color: #f44336;
         color: white;

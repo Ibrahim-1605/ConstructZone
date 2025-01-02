@@ -27,8 +27,10 @@ fetch("../data/products.json")
             <p><span class="text">Material Used:</span> ${product.material}</p>
             <p><span class="text">Country of Orgin:</span> ${product.country_of_orgin}</p>
             <p><span class="text">Description:</span> ${product.description}</p>
-            <a href="../pages/login.html">Contact</a>
-            <button class="close-button">Close</button>
+            <div class="closeContact">
+                <div><a href="../pages/login.html">Contact</a></div>
+                <div><button class="close-button">Close</button></div>
+            </div>
             </div>
             </div>`
 

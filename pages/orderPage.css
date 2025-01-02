@@ -126,8 +126,8 @@ textarea::placeholder{
 }
 .exit-btn {
    position: absolute;
-   top:16.6rem ;
-   right:10px;
+   top:17.6rem ;
+   right:37rem;
    font-size: 2rem;
    cursor: pointer;
 }
@@ -257,7 +257,7 @@ textarea::placeholder{
    width: 20rem;
    border-radius: 10px;
    text-align: center;
-} 
+}
 .orderSuccessDiv img {
    max-width: 150px;
    margin-bottom: 15px;
