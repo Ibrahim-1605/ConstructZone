@@ -130,7 +130,9 @@ function validation() {
        messageError.textContent = "";  
    }
 
-   return isValid;  
+   if(nameError.textContent === "" && emailError.textContent === "" && productError.textContent === "" && quantityError.textContent === "" && numberError.textContent === "" && addressError.textContent === "" && cityError.textContent === "" && messageError.textContent === ""){
+    return isValid;
+   } 
 }
 
 // //function for sending the email
