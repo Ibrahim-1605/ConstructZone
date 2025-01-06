@@ -63,7 +63,7 @@ else {
 
 // Validate last name
 if (lastName.trim() === "") {
-  lastNameError.textContent = "Please enter your last name.";
+  lastNameError.textContent = "";
 }
 // Validation for numbers or special characters (excluding spaces and letters)
 else if (/[^A-Za-z\s]/.test(lastName)) {
@@ -102,8 +102,7 @@ else {
   }
 
   // If all validations pass, create the user
-  if (firstNameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "") {
-    lastNameError.textContent = "";
+  if (firstNameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "" && lastNameError.textContent === "") {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
