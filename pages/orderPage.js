@@ -81,7 +81,16 @@ function validation() {
    else if (product.length < 3 || product.length > 100) {
        productError.textContent = "Product name must be between 3 and 100 characters.";
        isValid = false;
-   } else{
+   }//Entering the valid product name without numbers
+   else if (/^\d+$/.test(product)) {
+       productError.textContent = "Please enter a valid product name without numbers.";
+       isValid = false;
+   }//Entering a valid product name without special character
+   else if (/^[^a-zA-Z0-9]*$/.test(product)) {
+       productError.textContent = "Please enter a valid product name without special character.";
+       isValid = false;
+   }
+   else{
        productError.textContent = "";
    }
 
@@ -102,7 +111,7 @@ function validation() {
        isValid = false;
    }else if(number.length<10||number.length>10){
        numberError.textContent = "Please enter the valid mobile number.";
-   } else{
+   }else{
        numberError.textContent = "";
    }
 
@@ -118,10 +127,15 @@ function validation() {
    if(city.trim()===""){
        cityError.textContent = "Please enter the city name";
        isValid = false;
-   }else{
+   }//Enter a valid city name without nubers and special character.
+   else if (/[^a-zA-Z]/.test(city)) {
+    cityError.textContent = "Please enter a valid city name without numbers or special characters.";
+    isValid = false;
+   }
+    else{
        cityError.textContent = "";
    }
-  
+
    // Validate message
    if (message.trim() === "") {
        messageError.textContent = "Please enter your description/expectation about the product.";
