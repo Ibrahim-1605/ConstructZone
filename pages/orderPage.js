@@ -81,13 +81,13 @@ function validation() {
    else if (product.length < 3 || product.length > 100) {
        productError.textContent = "Product name must be between 3 and 100 characters.";
        isValid = false;
-   }//Entering the valid product name without numbers
+   }//Entering the valid product name without numbers only.
    else if (/^\d+$/.test(product)) {
-       productError.textContent = "Please enter a valid product name without numbers.";
+       productError.textContent = "Please don't enter the product name that contain only number.";
        isValid = false;
-   }//Entering a valid product name without special character
+   }//Entering a valid product name without special character only.
    else if (/^[^a-zA-Z0-9]*$/.test(product)) {
-       productError.textContent = "Please enter a valid product name without special character.";
+       productError.textContent = "Please don't enter the product name that contain only special character.";
        isValid = false;
    }
    else{
@@ -98,10 +98,16 @@ function validation() {
    if(quantity.trim() === ""){
        quantityError.textContent = "Please enter the quantity of the product.";
        isValid = false;
-   } else{
+   }//Enter the prduct quantity contain without numbers only.
+   else if (/^[^a-zA-Z0-9]*$/.test(quantity)) {
+        quantityError.textContent = "Please don't enter the product name that contain only special character.";
+        isValid = false;
+   }
+    else{
        quantityError.textContent = "";
    }
 
+   let firstNum = number[0];
    //Validate Phone number
    if(number.trim() === ""){
        numberError.textContent = "Please enter your number.";
@@ -111,6 +117,8 @@ function validation() {
        isValid = false;
    }else if(number.length<10||number.length>10){
        numberError.textContent = "Please enter the valid mobile number.";
+   }else if(firstNum===0||firstNum===1||firstNum===2||firstNum===3||firstNum===4||firstNum===5){
+       numberError.textContent = "Number should not start with zero to five"
    }else{
        numberError.textContent = "";
    }
@@ -118,6 +126,10 @@ function validation() {
    //Validate address
    if(address.trim() === ""){
        addressError.textContent = "Please enter your address.";
+       isValid = false;
+   }//Enter a valid address without nubers and special character.
+   else if (/[^a-zA-Z]/.test(address)) {
+       addressError.textContent = "Please enter a valid address without numbers or special characters.";
        isValid = false;
    }else{
        addressError.textContent = "";
@@ -129,8 +141,12 @@ function validation() {
        isValid = false;
    }//Enter a valid city name without nubers and special character.
    else if (/[^a-zA-Z]/.test(city)) {
-    cityError.textContent = "Please enter a valid city name without numbers or special characters.";
-    isValid = false;
+        cityError.textContent = "Please enter a valid city name without numbers or special characters.";
+        isValid = false;
+   }//Name cannot start ot end with spaces
+   else if (/^\s|\s$/.test(name)) {
+        cityError.textContent = "Name cannot start or end with spaces.";
+        isValid = false;
    }
     else{
        cityError.textContent = "";
@@ -205,4 +221,3 @@ function showOrderSuccess(event) {
         showOrderSuccess(event)
     }
   });
-  
