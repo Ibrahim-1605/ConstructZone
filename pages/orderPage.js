@@ -128,7 +128,7 @@ function validation() {
        addressError.textContent = "Please enter your address.";
        isValid = false;
    }//Enter a valid address without nubers and special character.
-   else if (/[^a-zA-Z]/.test(address)) {
+   else if (/^[^a-zA-Z0-9]*$/.test(address)) {
        addressError.textContent = "Please enter a valid address.";
        isValid = false;
    }else{
