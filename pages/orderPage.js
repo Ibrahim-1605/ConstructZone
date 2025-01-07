@@ -83,11 +83,11 @@ function validation() {
        isValid = false;
    }//Entering the valid product name without numbers only.
    else if (/^\d+$/.test(product)) {
-       productError.textContent = "Please don't enter the product name that contain only number.";
+       productError.textContent = "Please enter the valid product name.";
        isValid = false;
    }//Entering a valid product name without special character only.
    else if (/^[^a-zA-Z0-9]*$/.test(product)) {
-       productError.textContent = "Please don't enter the product name that contain only special character.";
+       productError.textContent = "Please enter the product name.";
        isValid = false;
    }
    else{
@@ -100,7 +100,7 @@ function validation() {
        isValid = false;
    }//Enter the prduct quantity contain without numbers only.
    else if (/^[^a-zA-Z0-9]*$/.test(quantity)) {
-        quantityError.textContent = "Please don't enter the product name that contain only special character.";
+        quantityError.textContent = "Please enter the valid product quantity.";
         isValid = false;
    }
     else{
@@ -117,8 +117,8 @@ function validation() {
        isValid = false;
    }else if(number.length<10||number.length>10){
        numberError.textContent = "Please enter the valid mobile number.";
-   }else if(firstNum===0||firstNum===1||firstNum===2||firstNum===3||firstNum===4||firstNum===5){
-       numberError.textContent = "Number should not start with zero to five"
+   }else if(firstNum==="0"||firstNum==="1"||firstNum==="2"||firstNum==="3"||firstNum==="4"||firstNum==="5"){
+       numberError.textContent = "Number should not start with zero to five."
    }else{
        numberError.textContent = "";
    }
@@ -129,7 +129,7 @@ function validation() {
        isValid = false;
    }//Enter a valid address without nubers and special character.
    else if (/[^a-zA-Z]/.test(address)) {
-       addressError.textContent = "Please enter a valid address without numbers or special characters.";
+       addressError.textContent = "Please enter a valid address.";
        isValid = false;
    }else{
        addressError.textContent = "";
