@@ -23,12 +23,12 @@
             <h1>Share your feedback</h1>
             <div><label for="name">Name:</label></div>
             <div>
-                <input type="text" id="name" placeholder="Enter your Name" required/>
+                <input type="text" id="name" placeholder="Enter your Name" required readonly/>
             </div>
             <div id="nameError" class="error"></div>
             <div><label for="email">Email:</label></div>
             <div>
-                <input type="email" id="email" placeholder="Enter your Email" required/>
+                <input type="email" id="email" placeholder="Enter your Email" required readonly/>
             </div>
             <div id="emailError" class="error"></div>
             <div><label for="message">Message:</label></div>
@@ -40,5 +40,5 @@
         </form>
     </div>
 </body>
-<script src="./feedback.js" defer></script>
+<script src="./feedback.js" type="module" defer></script>
 </html>
