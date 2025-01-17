@@ -108,26 +108,26 @@ function validation() {
 //   return validity.test(front) && validity.test(back);
 // }
 
-function sendEmail() {
-  var email = document.getElementById("email").value;
-  var name = document.getElementById("name").value;
-  var message = document.getElementById("message").value;
+// function sendEmail() {
+//   var email = document.getElementById("email").value;
+//   var name = document.getElementById("name").value;
+//   var message = document.getElementById("message").value;
   
-  var templateParams = {
-      email: email,
-      to_name: name,
-      message: message
-  };
+//   var templateParams = {
+//       email: email,
+//       to_name: name,
+//       message: message
+//   };
 
-  emailjs.send('service_sy7h9gd', 'template_yzfgfgk', templateParams)
-      .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch(function(error) {
-          console.log('FAILED...', error);
-          window.alert("An error occurred while sending the email.");
-      });
-}
+//   emailjs.send('service_sy7h9gd', 'template_yzfgfgk', templateParams)
+//       .then(function(response) {
+//           console.log('SUCCESS!', response.status, response.text);
+//       })
+//       .catch(function(error) {
+//           console.log('FAILED...', error);
+//           window.alert("An error occurred while sending the email.");
+//       });
+// }
 
 function showOrderSuccess(event) {
    event.preventDefault()
@@ -154,7 +154,7 @@ function showOrderSuccess(event) {
 // Adding event listener to the button to trigger the function
 document.getElementById("button").addEventListener("click", function(event){
   if(validation()){
-      sendEmail()
+      // sendEmail()
       showOrderSuccess(event)
   }
 });
