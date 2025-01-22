@@ -204,31 +204,31 @@ function validation() {
    } 
 }
 
-// //function for sending the email
-// function sendEmail(){
-// 	let email = document.getElementById("email").value;
-//     let name = document.getElementById("name").value;
-//     let product = document.getElementById("product").value;
-//     let quantity= document.getElementById("quantity").value;
-//     let number= document.getElementById("number").value;
-//     let address = document.getElementById("address").value;
-//     let city = document.getElementById("city").value;
-//     let message = document.getElementById("message").value;
-// 	var templateParams = {
-//         email: email,
-//         to_name: name,
-// 		   message: message,
-//         product: product,
-//         quantity: quantity,
-//         number: number,
-//         address: address,
-//         city: city
-//       };
-//       emailjs.send('service_2opabqr', 'template_obi2kve', templateParams)
-//   .then(function(response) {
-//      console.log('SUCCESS!', response.status, response.text);
-//   })     
-// }
+//function for sending the email
+function sendEmail(){
+	let email = document.getElementById("email").value;
+    let name = document.getElementById("name").value;
+    let product = document.getElementById("product").value;
+    let quantity= document.getElementById("quantity").value;
+    let number= document.getElementById("number").value;
+    let address = document.getElementById("address").value;
+    let city = document.getElementById("city").value;
+    let message = document.getElementById("message").value;
+	var templateParams = {
+        email: email,
+        to_name: name,
+		   message: message,
+        product: product,
+        quantity: quantity,
+        number: number,
+        address: address,
+        city: city
+      };
+      emailjs.send('service_2opabqr', 'template_obi2kve', templateParams)
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+  })     
+}
 
 
 function showOrderSuccess(event) {
@@ -256,7 +256,7 @@ function showOrderSuccess(event) {
   // Adding event listener to the button to trigger the function
   document.getElementById("button").addEventListener("click", function(event){
     if(validation()){
-        // sendEmail()
+        sendEmail()
         showOrderSuccess(event)
     }
   });
