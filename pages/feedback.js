@@ -27,8 +27,6 @@ onAuthStateChanged(auth, (user) => {
           const email = document.getElementById("email");
           name.value = userDetails.firstName + userDetails.lastName;
           email.value = userDetails.email
-          // name.setAttribute('readonly','readonly')
-          // email.setAttribute('readonly','readonly')
         }
       })
       .catch((error) => console.log('Error fetching user details:', error));
@@ -47,37 +45,6 @@ function validation() {
   let messageError = document.getElementById("messageError");
 
   let isValid = true;
-
-  // // Validate name
-  // if (name.trim() === "") {
-  //     nameError.textContent = "Please enter your name.";
-  //     isValid = false;
-  // }
-  // // Check if name contains numbers or special characters
-  // else if (/[^A-Za-z\s]/.test(name)) {
-  //     nameError.textContent = "Please enter a valid name without numbers or special characters.";
-  //     isValid = false;
-  // }
-  // // Check if name has leading/trailing spaces
-  // else if (/^\s|\s$/.test(name)) {
-  //     nameError.textContent = "Name cannot start or end with spaces.";
-  //     isValid = false;
-  // }
-  // // Name should be between 3 and 20 characters
-  // else if (name.length < 3 || name.length > 20) {
-  //     nameError.textContent = "Name must be between 3 and 20 characters.";
-  //     isValid = false;
-  // } else {
-  //     nameError.textContent = "";  
-  // }
-
-  // // Validate email
-  // if (!findValidEmail(email)) {
-  //     emailError.textContent = "Please enter a valid email address.";
-  //     isValid = false;
-  // } else {
-  //     emailError.textContent = "";  
-  // }
 
   // Validate message
   if (message.trim() === "") {

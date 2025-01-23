@@ -37,24 +37,6 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-// // Function to validate email
-// function findValidEmail(email) {
-//     const specialCharacter = email.indexOf('@');
-//     if (specialCharacter === -1) {
-//       return false;
-//     }
-//     let front = email.slice(0, specialCharacter);
-//     let back = email.slice(specialCharacter + 4);
-//     if (!front || !back) {
-//       return false;
-//     }
-//     if (back.indexOf('.') === -1) {
-//       return false;
-//     }
-//     const validity = /^[a-zA-Z0-9._-]+$/;
-//     return validity.test(front) && validity.test(back);
-// }
-
 // Give the validation for the form
 function validation() {
    let email = document.getElementById("email").value;
@@ -75,38 +57,6 @@ function validation() {
    let messageError = document.getElementById("messageError");
   
    let isValid = true;
-  
-
-//    // Validate the name
-//    if (name.trim() === "") {
-//        nameError.textContent = "Please enter your name.";
-//        isValid = false;
-//    }
-//    // Check if name contains numbers or special characters
-//    else if (/[^A-Za-z\s]/.test(name)) {
-//        nameError.textContent = "Please enter a valid name without numbers or special characters.";
-//        isValid = false;
-//    }
-//    // Check if name has leading/trailing spaces
-//    else if (/^\s|\s$/.test(name)) {
-//        nameError.textContent = "Name cannot start or end with spaces.";
-//        isValid = false;
-//    }
-//    // Name should be between 3 and 20 characters
-//    else if (name.length < 3 || name.length > 20) {
-//        nameError.textContent = "Name must be between 3 and 20 characters.";
-//        isValid = false;
-//    } else {
-//        nameError.textContent = "";  
-//    }
-  
-//    // Validate email
-//    if (!findValidEmail(email)) {
-//        emailError.textContent = "Please enter a valid email address.";
-//        isValid = false;
-//    } else {
-//        emailError.textContent = "";  
-//    }
 
    //Validate product name
    if(product.trim() === ""){
